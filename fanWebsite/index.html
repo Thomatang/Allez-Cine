@@ -25,41 +25,133 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>\\\Watchmen///</title>
+    <title>\\\WatchFan///</title>
 </head>
 
 <body>
     <div class="container-fluid p-0 m-0">
-        <div class="navbar d-flex align-items-center">
-            <div class="menu-logo list-inline d-flex">
-                <img class="list-inline-items logo px-3" src="image/Watchmen-logo.png" alt="no logo">
-                <span class="list-inline-items text-uppercase">watchfan</span>
-            </div>
-            <div class="menu-list d-flex ">
-                <ul class="list-inline px-4">
-                    <li class="list-inline-item px-3 pt-3">
-                        <a class="text-uppercase " href="#news">news</a>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <img class="pl-5 pr-3 bounceInLeft" src="image/Watchmen-logo.png" alt="">
+            <span class="navbar-brand  bounceInLeft" href="#">-wATCHFAn-</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end px-5 bounceInRight" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-uppercase" href="#news">news <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="list-inline-item px-3 pt-3">
-                        <a class="text-uppercase" href="#character">character</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#character">character</a>
                     </li>
-                    <li class="list-inline-item px-3 pt-3">
-                        <a class="text-uppercase" href="gallery">gallery</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#gallery">gallery</a>
                     </li>
-                    <li class="list-inline-item px-3 pt-3">
-                        <a class="text-uppercase" href="shop">shop</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#shop">shop</a>
                     </li>
-                    <li class="list-inline-item px-3 pt-3">
-                        <a class="text-uppercase" href="contact">contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
 
+        <section id="news" class="container-fluid content1 p-0 mx-0">
+
+
+            <div id="SlideIntro" class="carousel slide " data-ride="carousel" data-interval="false">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#SlideIntro" data-slide-to="0" class="active"></li>
+                    <li data-target="#SlideIntro" data-slide-to="1"></li>
+                    <li data-target="#SlideIntro" data-slide-to="2"></li>
+                    <li data-target="#SlideIntro" data-slide-to="3"></li>
+                    <li data-target="#SlideIntro" data-slide-to="4"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/carousel0.jpg" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Intro Watchmen I</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia reprehenderit aliquid repellat, vero alias officiis delectus expedita! Dolore, accusamus tenetur voluptas libero adipisci veritatis ipsam iure recusandae odio minus
+                                provident.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel1.jpg" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Intro Watchmen II</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel2.jpg" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Intro Watchmen III</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel3.jpg" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Intro Watchmen IV</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/carousel4.jpg" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Intro Watchmen V</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#SlideIntro" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#SlideIntro" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+        <div id="character" class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <a href=""></a>
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+
+                </div>
+                <div class="col-4 col-md-6 col-sm-12">
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
