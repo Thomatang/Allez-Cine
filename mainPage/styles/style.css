@@ -15,7 +15,6 @@
 
 /* Modal Content/Box */
 .modal-content {
-    background-image: url('../img/moviereel.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 15% auto; /* 15% from the top and centered */
@@ -75,4 +74,11 @@
 .minorButton:hover{
   background-color: #f35626;
   background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+}
+
+#registerTerms{
+  display: none;
+}
+#registerButtonFinal{
+  display: none;
 }

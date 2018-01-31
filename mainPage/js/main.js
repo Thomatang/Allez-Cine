@@ -12,3 +12,31 @@ $(document).ready(function(){
 $('#AdultButton').click(function() {
   $('#openingModal').hide();
 })
+
+// modal login form
+$("#loginButton").click(function(){
+      //Disply the modal popup
+        $('#loginModal').show();
+});
+
+$("#loginButton2").click(function(){
+      //hide the modal popup
+        $('#loginModal').hide();
+});
+
+//Dispplay terms and conditions checkbox and complete registration button
+$("#registerButton").click(function(){
+        $('#registerTerms').show();
+        $("#loginButton2").hide();
+        $(this).hide();
+        $("#registerButtonFinal").show();
+});
+//make connexion form disappear when clicking on final registration button
+$("#registerButtonFinal").click(function(){
+  $('#loginModal').hide();
+})
+$("#closeButton").click(function(){
+        $('#loginModal').hide();
+});
+
+//==============================================

@@ -7,10 +7,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Document</title>
+  <title>Allez-Cine</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#aa0000",
+        "text": "#ffdddd"
+      },
+      "button": {
+        "background": "#ff0000"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom-right"
+  })});
+  </script>
 </head>
+
+
 <body>
-  <!-- The Opening Modal -->
+  <!-- The Opening Modal, asking age of users, alowing them to enter or redirecting minors to imdb -->
   <div id="openingModal" class="modal">
 
     <!-- Modal content -->
@@ -24,6 +44,547 @@
     </div>
   </div>
 
+  <!--Login and Registration form modals -->
+  <div class="modal" tabindex="-1" role="dialog" id="loginModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login Your Allez-Cine Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeButton">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label></br>
+              <div id="registerTerms">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I accept the <a href="">terms and conditions</a></label>
+
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="loginButton2">Login Account</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="registerButton">Register</button>
+          <button type="submit" class="btn btn-secondary" data-dismiss="modal" id="registerButtonFinal">Complete Registration</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbonavbar">
+    <nav class="navbar navbar-toggleable-md navbar-light">
+      <div class="col-sm">
+        <!-- AllezCine Logo Col -->
+        <h2><a href="index.html">AllezCine</a></h2>
+      </div>
+      <div class="col-sm">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="col-sm">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Comedy</a>
+            <a class="dropdown-item" href="#">Western</a>
+            <a class="dropdown-item" href="#">Fiction</a>
+          </div>
+        </li>
+      </div>
+      <div class="col-sm">
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+      </div>
+      <div class="col-sm">
+        <a href="#">Contact</a>
+      </div>
+
+      <form class="form-inline">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
+          <span class="input-group-addon" id="basic-addon1"><a href="#">&#128270;</a></span>
+        </div>
+      </form>
+    </nav>
+          <!--=======================CAROUSEL ===================================-->
+          <!--=======================CAROUSEL ===================================-->
+          <!--=======================CAROUSEL ===================================-->
+    <section id="news" class="container-fluid content1 p-0 mx-0">
+    
+    
+      <div id="SlideIntro" class="carousel slide " data-ride="carousel" data-interval="false">
+    
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#SlideIntro" data-slide-to="0" class="active"></li>
+          <li data-target="#SlideIntro" data-slide-to="1"></li>
+          <li data-target="#SlideIntro" data-slide-to="2"></li>
+          <li data-target="#SlideIntro" data-slide-to="3"></li>
+          <li data-target="#SlideIntro" data-slide-to="4"></li>
+        </ul>
+    
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/carousel0.jpg" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Intro Watchmen I</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia reprehenderit aliquid repellat, vero alias officiis
+                delectus expedita! Dolore, accusamus tenetur voluptas libero adipisci veritatis ipsam iure recusandae odio minus
+                provident.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel1.jpg" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Intro Watchmen II</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel2.jpg" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Intro Watchmen III</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel3.jpg" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Intro Watchmen IV</h3>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel4.jpg" alt="Slide 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Intro Watchmen V</h3>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#SlideIntro" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#SlideIntro" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <div class="row bg-danger">
+      <div class="col-sm" class="redbar">
+        &#9990; (+000) 009 455 4088
+        <button type="button" name="button" class="accountbuttons" id="loginButton">Login</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <img class="img-fluid" src="../images/citizensoldier.jpg" alt="Citizen soldier">
+            <p>Citizen Soldier</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img class="img-fluid" src="../images/xmen.jpg" alt="X men">
+            <p>X-Men</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img class="img-fluid" src="../images/greater.jpg" alt="Greater">
+            <p>Greater</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img class="img-fluid" src="../images/lightbetween.jpg" alt="Light Between">
+            <p>The Light Between Oceans</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img class="img-fluid" src="../images/bigfuckinggiant.jpg" alt="The BFG">
+            <p>The BFG</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2>FEATURED MOVIES</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <button type="button" name="button" class="hoverredbtn">All</button>
+      <button type="button" name="button" class="hoverredbtn">Action</button>
+      <button type="button" name="button" class="hoverredbtn">Policiers</button>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+        <p>God's Compass</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
+        <p>Bad Moms</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+        <p>Jason Bourne</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+        <p>The Rezort</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+        <p>Peter Rabbit</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+        <p>ISRA 88</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+        <p>War Dogs</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+        <p>The Other Side</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
+        <p>Captain America: Civil War</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+        <p>The Secret Life of Pets</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+        <p>The Jungle Book</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
+        <p>Asassin's Creed</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" name="button" class="redbutton">PLUS DE FILMS</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2>FEATURED SERIES TV</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <button type="button" name="button" class="hoverredbtn">All</button>
+      <button type="button" name="button" class="hoverredbtn">Action</button>
+      <button type="button" name="button" class="hoverredbtn">Policiers</button>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+        <p>God's Compass</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/badmoms.jpg" alt="Bad moms" class="img-fluid">
+        <p>Bad Moms</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+        <p>Jason Bourne</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+        <p>The Rezort</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+        <p>Peter Rabbit</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+        <p>ISRA 88</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+        <p>War Dogs</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+        <p>The Other Side</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/capmurica.jpg" alt="Civil War" class="img-fluid">
+        <p>Civil War: Captain America</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/pets.jpg" alt="The Secret Life of Pets" class="img-fluid">
+        <p>The Secret Life of Pets</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+        <p>The Jungle Block</p>
+        <p>2016</p>
+      </div>
+      <div class="col-sm">
+        <img src="../images/asasincreed.jpg" alt="Assasin's Creed 3" class="img-fluid">
+        <p>Asassin's Creed 3</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" name="button" class="redbutton">PLUS DE FILMS</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2>SHOP MOVIES</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/swissarmyman-2016-comedie.jpg" alt="Swiss Army Man" class="img-fluid">
+        <p>Swiss Army Man</p>
+        <div class="flexspacing">
+          <p>2016</p>
+          <p class="redtext">15 Euro</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/menu.jpg" alt="Me Before You" class="img-fluid">
+        <p>Me Before You</p>
+        <div class="flexspacing">
+          <p>2016</p>
+          <p class="redtext">15 Euro</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/deadpool.jpg" alt="Deadpool" class="img-fluid">
+        <p>Deadpool</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/rogueboi.jpg" alt="Rogue One" class="img-fluid">
+        <p>Rogue One</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p>this is a test</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/storks.jpg" alt="Storks" class="img-fluid">
+        <p>Storks</p>
+        <div class="flexspacing">
+          <p>2016</p>
+          <p class="redtext">15 Euro</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/hopeless.jpg" alt="Hopeless" class="img-fluid">
+        <p>Hopeless</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/mechanic.jpg" alt="Mechanic" class="img-fluid">
+        <p>Mechanic</p>
+        <p>2016</p>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+        <img src="../images/timeless.jpg" alt="Timeless" class="img-fluid">
+        <p>Timeless</p>
+        <p>2016</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="col-sm-6 contactcontainer">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="FIRST NAME" class="col-12">
+          </form>
+        </div>
+        <div class="col-sm-6 contactcontainer2">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="LAST NAME" class="col-12">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 contactcontainer">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="EMAIL" class="col-12">
+          </form>
+        </div>
+        <div class="col-sm-6 contactcontainer2">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="SUBJECT" class="col-12">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <form class="contactcontainer3" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="YOUR MESSAGE" class="col-12">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <button type="button" name="button" class="redbutton">SEND MESSAGE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footermain">
+    <div class="row">
+      <div class="col-sm subscribearea">
+        <h3 class="subtitle">SUBSCRIBE TO US</h3>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Enter Your Email...">
+          <button type="button" name="button" class="redbutton">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-1">
+        <h5 class="footertitles">Release</h5>
+        <hr>
+        <p>2016</p>
+        <p>2015</p>
+        <p>2014</p>
+        <p>2013</p>
+        <p>2012</p>
+        <p>2011</p>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="footertitles">Movies</h5>
+        <hr>
+        <p>ADVENTURE</p>
+        <p>COMEDY</p>
+        <p>FANTASY</p>
+        <p>ACTION</p>
+        <p>MOVIES</p>
+        <p>HORROR</p>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="footertitles">Review Movies</h5>
+        <hr>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="footertitles">Latest Movies</h5>
+        <hr>
+        <p><img src="" class="img-fluid" alt=""> EVENIT UT MOLESTI </p>
+        <p><img src="" class="img-fluid" alt=""> EARUM REFUM TENET</p>
+        <p><img src="" class="img-fluid" alt=""> EVENIT UT MOLESTI </p>
+        <p><img src="" class="img-fluid" alt=""> EARUM REFUM TENET</p>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="footertitles">ALLEZCINE</h5>
+        <hr>
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <h5 class="footertitles">CONNECT US</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <!-- Insert Social buttons here -->
+      </div>
+    </div>
+  </footer>
 <script src="js/main.js"></script>
 </body>
 </html>
