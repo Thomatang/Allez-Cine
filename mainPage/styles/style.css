@@ -70,3 +70,9 @@
   display: flex;
   justify-content: center;
 }
+
+.sectiontitle{
+  border-left: red 8px solid;
+  margin-left: 50px;
+  padding: 10px;
+}
