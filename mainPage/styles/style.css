@@ -28,6 +28,22 @@
   text-decoration: none;
 }
 
+.twitbtn {
+background-color: lightblue;
+}
+
+.fbbtn {
+background-color: blue;
+}
+
+.dribbblebtn {
+background-color: pink;
+}
+
+.gplusbtn {
+background-color: red;
+}
+
 .hoverredbtn {
   font-family: Arial;
   color: #ffffff;
