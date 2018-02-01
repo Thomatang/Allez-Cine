@@ -82,3 +82,13 @@
 #registerButtonFinal{
   display: none;
 }
+
+
+
+
+/*  JUMBOTRON PIC RESIZE */
+.jumbotronPic {
+height: 800px;
+position: relative;
+
+}
