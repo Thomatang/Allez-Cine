@@ -66,10 +66,17 @@ background-color: red;
   color: #7A7B75;
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  
 }
 
 .subtitle {
   color: red;
+}
+
+.footerpics{
+  height: 25%;
+  width: 25%;
 }
 
 .contactcontainer {
