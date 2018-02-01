@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'watchmen';
+    src: url('../font/watchmen.ttf');
+}
+
+.hero {
+    height: 16.66vh;
+    width: 100%;
+    background-color: black;
+    border-top: 1vh solid gold;
+    overflow: hidden;
+}
+
+.hero .hero-title {
+    text-decoration: none;
+    font-family: 'watchmen';
+    font-size: 12vh;
+    color: gold;
+    padding-top: 5.6vh;
+}
+
+.hero .logo {
+    height: 15vh;
+    width: auto;
+    padding-bottom: 5vh;
+}

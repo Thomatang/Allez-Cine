@@ -54,4 +54,5 @@ $(document).ready(function() {
     $('.char6').mouseout(function() {
         $('.name6').css("visibility", "hidden");
     });
+
 });

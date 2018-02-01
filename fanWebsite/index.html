@@ -32,27 +32,26 @@
     <div class="container-fluid p-0 m-0">
 
         <nav class="navbar navbar-expand-lg fixed-top">
-            <img class="pl-5 pr-3 bounceInLeft" src="image/Watchmen-logo.png" alt="">
             <span class="navbar-brand  bounceInLeft" href="#">-wATCHFAn-</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end px-5 bounceInRight" id="navbarNav">
+            <div class="collapse navbar-collapse d-flex justify-content-end bounceInRight" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item active">
-                        <a class="nav-link text-uppercase" href="#news">news <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase px-3" href="#news">news <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#character">character</a>
+                        <a class="nav-link text-uppercase px-3" href="#character">character</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#gallery">gallery</a>
+                        <a class="nav-link text-uppercase px-3" href="#gallery">gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#shop">shop</a>
+                        <a class="nav-link text-uppercase px-3" href="#shop">shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#contact">contact</a>
+                        <a class="nav-link text-uppercase pl-3 pr-5" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,7 +74,7 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="image/carousel0.jpg" alt="Slide 1">
+                        <img src="image/carousel0.jpg" class="img1" alt="Slide 1">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Intro Watchmen I</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia reprehenderit aliquid repellat, vero alias officiis delectus expedita! Dolore, accusamus tenetur voluptas libero adipisci veritatis ipsam iure recusandae odio minus
@@ -121,61 +120,96 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
+            <div id="character">
+            </div>
         </section>
-        <div class="row">
-
-            <div class="col-12 col-md-6 col-xl-4">
-                <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img class="char1" src="image/comedian.svg" alt="The comedian logo"></a>
-                <p class="char name1 text-uppercase text-center">the comedian</p>
+        <section class="section-hero">
+            <div class="hero comedian d-flex justify-content-start">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <img class="logo img-fluid" src="image/comedian.png" alt="">The Comedian
+                </a>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-                <a data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"><img class="char2" src="image/rorschach.svg" alt="Rorschach logo"></a>
-                <p class="char name2 text-uppercase text-center">rorschach</p>
-            </div>
-            <div class="col-12 col-md-6 col-xl-4">
-                <a data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><img class="char3" src="image/owl.svg" alt="Nite owl logo"></a>
-                <p class="char name3 text-uppercase text-center">nite owl ii</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
+            <div class="collapse" id="multiCollapseExample1">
+                <div class="card card-body card-comedian">
+                    <p>One of two government-sanctioned heroes (along with Doctor Manhattan) who remains active after the Keene Act is passed in 1977 to ban superheroes.</p>
+                    <p>His murder, which occurs shortly before the first chapter begins, sets the plot of Watchmen in motion. </p>
+                    <p>The character appears throughout the story in flashbacks and aspects of his personality are revealed by other characters.</p>
+                    <p>The Comedian was based on the Charlton Comics character Peacemaker, with elements of the Marvel Comics spy character Nick Fury added. Moore and Gibbons saw The Comedian as "a kind of Gordon Liddy character, only a much bigger, tougher
+                        guy". Richard Reynolds described The Comedian as "ruthless, cynical, and nihilistic, and yet capable of deeper insights than the others into the role of the costumed hero". He attempts to rape the first Silk Spectre in the 1940s.
+                        Issue nine reveals that years later he fathered her daughter Laurie as part of a consensual sexual relationship.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
+            <div class="hero manhattan d-flex justify-content-end">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            Dr Manhattan<img class="logo img-fluid" src="image/manhattan.png" alt="">
+                    </a>
+            </div>
+            <div class="collapse" id="multiCollapseExample2">
+                <div class="card card-body card-manhattan">
+                    <p>A superpowered being who is contracted by the United States government. Scientist Jon Osterman gained power over matter when he was caught in an "Intrinsic Field Subtractor" in 1959. Doctor Manhattan was based upon Charlton's Captain
+                        Atom, who in Moore's original proposal was surrounded by the shadow of nuclear threat. However, the writer found he could do more with Manhattan as a "kind of a quantum super-hero" than he could have with Captain Atom.[14] In contrast
+                        to other superheroes who lacked scientific exploration of their origins, Moore sought to delve into nuclear physics and quantum physics in constructing the character of Dr. Manhattan. The writer believed that a character living
+                        in a quantum universe would not perceive time with a linear perspective, which would influence the character's perception of human affairs. Moore also wanted to avoid creating an emotionless character like Spock from Star Trek,
+                        so he sought for Dr. Manhattan to retain "human habits" and to grow away from them and humanity in general.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample3">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
+            <div class="hero owl d-flex justify-content-start">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
+                    <img class="logo img-fluid" src="image/owl.png" alt="">Night Owl II
+                </a>
+            </div>
+            <div class="collapse" id="multiCollapseExample3">
+                <div class="card card-body card-owl">
+                    <p>A retired superhero who utilizes owl-themed gadgets. Nite Owl was based on the Ted Kord version of the Blue Beetle. Paralleling the way Ted Kord had a predecessor, Moore also incorporated an earlier adventurer who used the name "Nite
+                        Owl", the retired crime fighter Hollis Mason, into Watchmen. While Moore devised character notes for Gibbons to work from, the artist provided a name and a costume design for Hollis Mason he had created when he was twelve. Richard
+                        Reynolds noted in Super Heroes: A Modern Mythology that despite the character's Charlton roots, Nite Owl's modus operandi has more in common with the DC Comics character Batman. According to Klock, his civilian form "visually suggests
+                        an impotent, middle-aged Clark Kent."</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
+            <div class="hero ozymandias d-flex justify-content-end">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">
+                            Ozymandias<img class="logo img-fluid" src="image/ozymandias.png" alt="">
+                    </a>
+            </div>
+            <div class="collapse" id="multiCollapseExample4">
+                <div class="card card-body card-ozymandias">
+                    <p>Drawing inspiration from Alexander the Great, Veidt was once the superhero Ozymandias, but has since retired to devote his attention to the running of his own enterprises. Veidt is believed to be the smartest man on the planet. Ozymandias
+                        was based on Peter Cannon, Thunderbolt; Moore liked the idea of a character who "us[ed] the full 100% of his brain" and "[had] complete physical and mental control". Richard Reynolds noted that by taking initiative to "help the
+                        world", Veidt displays a trait normally attributed to villains in superhero stories, and in a sense he is the "villain" of the series. Gibbons noted, "One of the worst of his sins [is] kind of looking down on the rest of humanity,
+                        scorning the rest of humanity.</p>
+                </div>
+            </div>
+            <div class="hero rorschach d-flex justify-content-start">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">
+                    <img class="logo img-fluid" src="image/rorschach.png" alt="">Rorschach
+                </a>
+            </div>
+            <div class="collapse" id="multiCollapseExample5">
+                <div class="card card-body card-rorschach">
+                    <p>A vigilante who wears a white mask that contains a symmetrical but constantly shifting ink blot pattern, he continues to fight crime in spite of his outlaw status. Moore said he was trying to "come up with this quintessential Steve
+                        Ditko character—someone who's got a funny name, whose surname begins with a 'K,' who's got an oddly designed mask". Moore based Rorschach on Ditko's creation Mr. Ditko's Charlton character The Question also served as a template
+                        for creating Rorschach. Comics historian Bradford W. Wright described the character's world view "a set of black-and-white values that take many shapes but never mix into shades of gray, similar to the ink blot tests of his namesake".
+                        Rorschach sees existence as random and, according to Wright, this viewpoint leaves the character "free to 'scrawl [his] own design' on a 'morally blank world'". Moore said he did not foresee the death of Rorschach until the fourth
+                        issue when he realized that his refusal to compromise would result in him not surviving the story.</p>
+                </div>
+            </div>
+            <div class="hero specter d-flex justify-content-end">
+                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">
+                            Silk Specter II<img class="logo img-fluid" src="image/specter.png" alt="">
+                    </a>
+            </div>
+            <div class="collapse" id="multiCollapseExample6">
+                <div class="card card-body card-specter">
+                    <p>The daughter of Sally Jupiter (the first Silk Spectre, with whom she has a strained relationship) and The Comedian. Of Polish heritage, she had been the lover of Doctor Manhattan for years. While Silk Spectre was based partially on
+                        the Charlton character Nightshade, Moore was not impressed by the character and drew more from heroines such as Black Canary and Phantom Lady.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="section-gallery">
 
 
-            <div class="col-12 col-md-6 col-xl-4">
-                <a href="#"><img class="char4" src="image/ozymandias.svg" alt="Ozymandias logo"></a>
-                <p class="char name4 text-uppercase text-center">ozymandias</p>
-            </div>
-            <div class="col-12 col-md-6 col-xl-4">
-                <a href="#"><img class="char5" src="image/manhattan.svg" alt="Dr Manhattan logo"></a>
-                <p class="char name5 text-uppercase text-center">dr manhattan</p>
-            </div>
-            <div class="col-12 col-md-6 col-xl-4">
-                <a href="#"><img class="char6" src="image/specter.svg" alt="Silk Specter II logo"></a>
-                <p class="char name6 text-uppercase text-center">silk specter ii</p>
-            </div>
-        </div>
+        </section>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
