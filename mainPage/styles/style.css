@@ -83,12 +83,87 @@
   display: none;
 }
 
-
-
-
 /*  JUMBOTRON PIC RESIZE */
 .jumbotronPic {
 height: 800px;
 position: relative;
 
 }
+
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    left:-170px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    border-radius: 50px;
+    overflow: hidden;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+
+.sticky li:nth-child(1) {
+    background-color: #3e5f94;
+}
+.sticky li:nth-child(2) {
+    background-color:#3ba2ee;
+}
+.sticky li:nth-child(3) {
+    background-color:#e74c34;
+}
+.sticky li:nth-child(4) {
+    background-color: red;
+}
+
+.sticky li:hover{
+    margin-right:-115px;
+}
+.sticky li img{
+    float:right;
+    margin:5px 4px;
+    margin-right:5px;
+    border-radius: 50%;
+}
+.sticky li p{
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+   
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    
+      
+}
+.sticky li p a:hover{
+    text-decoration:none;
+}
+
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
+/* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
