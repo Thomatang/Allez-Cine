@@ -39,4 +39,21 @@ $("#closeButton").click(function(){
         $('#loginModal').hide();
 });
 
+//=========================================   MOVIE SECTION MODAL TO SHOW YOUTUBE TRAILERS==================
+
+$('#citizenSoldier').on("click", function(){
+  $('#citizenSoldierModal').modal('show')
+})
+$('#xMen').on("click", function () {
+  $('#xMenModal').modal('show')
+})
+$('#greater').on("click", function () {
+  $('#greaterModal').modal('show')
+})
+$('#theLightBetweenOceans').on("click", function () {
+  $('#theLightBetweenOceansModal').modal('show')
+})
+$('#bfg').on("click", function () {
+  $('#bfgModal').modal('show')
+})
 //==============================================
