@@ -10,60 +10,52 @@
   <script src="https://use.fontawesome.com/10338cf8ad.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-  <title>Document</title>
+  <title>AllezCine!</title>
 </head>
 
 <body>
-  <nav class="social">
-    <ul>
-      <li><a class="twitbtn" href="https://twitter.com/">Twitter <i class="fa fa-twitter"></i></a></li>
-      <li><a class="fbbtn" href="https://facebook.com/">Facebook <i class="fa fa-facebook"></i></a></li>
-      <li><a class="dribbblebtn" href="http://dribbble.com/">Dribbble <i class="fa fa-dribbble"></i></a></li>
-      <li><a class="gplusbtn" href="http://plus.google.com">Google Plus <i class="fa fa-google-plus-official"></i></a></li>
-    </ul>
-  </nav>
   <div class="jumbonavbar">
-    <nav class="navbar navbar-toggleable-md navbar-light">
-      <div class="col-sm">
-        <!-- AllezCine Logo Col -->
-        <h2><a href="index.html">AllezCine</a></h2>
-      </div>
-      <div class="col-sm">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="col-sm">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Comedy</a>
-            <a class="dropdown-item" href="#">Western</a>
-            <a class="dropdown-item" href="#">Fiction</a>
-          </div>
-        </li>
-      </div>
-      <div class="col-sm">
-        <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-      </div>
-      <div class="col-sm">
-        <a href="#">Contact</a>
-      </div>
-
-      <form class="form-inline">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
-          <span class="input-group-addon" id="basic-addon1"><a href="#">&#128270;</a></span>
-        </div>
-      </form>
-    </nav>
-
-    <div class="row bg-danger">
-      <div class="col-sm" class="redbar">
-        &#9990; (+000) 009 455 4088 <button type="button" name="button" class="accountbuttons">Login</button><button type="button" name="button" class="accountbuttons">Register</button>
-      </div>
+  <nav class="navbar navbar-toggleable-md navbar-light">
+    <div class="col-sm">
+      <!-- AllezCine logo goes here -->
+      <h2><a href="index.html">AllezCine</a></h2>
     </div>
+    <div class="col-sm">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="col-sm">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Comedy</a>
+          <a class="dropdown-item" href="#">Western</a>
+          <a class="dropdown-item" href="#">Fiction</a>
+        </div>
+      </li>
+    </div>
+    <div class="col-sm">
+      <button type="button" name="button"></button>
+      <button type="button" name="button"></button>
+      <button type="button" name="button"></button>
+    </div>
+    <div class="col-sm">
+      <a href="#">Contact</a>
+    </div>
+
+    <form class="form-inline">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1"><a href="#">&#128270;</a></span>
+      </div>
+    </form>
+  </nav>
+
+  <div class="row bg-danger">
+    <div class="col-sm" class="redbar">
+      &#9990; (+000) 009 455 4088 <button type="button" name="button" class="accountbuttons">Login</button><button type="button" name="button" class="accountbuttons">Register</button>
+    </div>
+  </div>
   </div>
   <div class="container">
     <div class="card">
@@ -344,12 +336,9 @@
     <div class="col-sm-5">
 
     </div>
-
   </div>
-  <br>
-  <div class="container">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-sm sectiontitle">
         <h2>Contact Us</h2>
       </div>
     </div>
@@ -408,9 +397,9 @@
         </form>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-1">
-        <h5 class="footertitles">Release</h5>
+    <div class="row offset-1">
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5>Release</h5>
         <p>2016</p>
         <p>2015</p>
         <p>2014</p>
@@ -418,8 +407,8 @@
         <p>2012</p>
         <p>2011</p>
       </div>
-      <div class="col-sm-2">
-        <h5 class="footertitles">Movies</h5>
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5>Movies</h5>
         <p>ADVENTURE</p>
         <p>COMEDY</p>
         <p>FANTASY</p>
@@ -427,10 +416,8 @@
         <p>MOVIES</p>
         <p>HORROR</p>
       </div>
-      <div class="col-sm-2">
-        <h5 class="footertitles">Review Movies</h5>
-        <hr>
-        <div class="row">
+         <div class="col-sm-2">
+          <h5>Review Movies</h5>
           <button type="button" name="button">Comedy</button>
           <button type="button" name="button">Horror</button>
           <button type="button" name="button">Historical</button>
@@ -447,33 +434,38 @@
           <button type="button" name="button">Horror</button>
           <button type="button" name="button">Historical</button>
         </div>
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5>Latest Movies</h5>
+        <p>Evelet ui Molesti</p>
+        <p>Earum Rerum Tenet</p>
+        <p>Evelet ui Molesti</p>
+        <p>Earum Rerum Tenet</p>
       </div>
-      <div class="col-sm-2">
-        <h5 class="footertitles">Latest Movies</h5>
-        <p><img src="../images/cagney.jpg" class="img-fluid footerpics" alt="James Cagney"> Evelet ui Molesti</p>
-        <p><img src="../images/sordi.jpg" class="img-fluid footerpics" alt="Alberto Sordi"> Earum Rerum Tenet</p>
-        <p><img src="../images/battisti.jpg" class="img-fluid footerpics" alt="Carlo Battisti"> Evelet ui Molesti</p>
-        <p><img src="../images/mastroianni.jpg" class="img-fluid footerpics" alt="Marcello Mastroianni"> Earum Rerum Tenet</p>
-      </div>
-      <div class="col-sm-2">
-        <h5 class="footertitles">ALLEZCINE</h5>
-
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5>ALLEZCINE</h5>
+        <img src="../images/jason.jpg" alt="jason bourne" class="img-fluid">
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
-        <h5 class="footertitles">CONNECT US</h5>
+      <hr>
+    </div>
+    <div class="row">
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center">
+        <h5>CONNECT US</h5>
       </div>
     </div>
-    <div class="row centraltext">
-      <div class="col-sm-4 socialicons centraltext">
-          <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+      <div class="row  ">
+        <div class="col-sm d-flex flex-row justify-content-center">
+          <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official " aria-hidden="true"></i></a>
+          <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+          <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+          <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube " aria-hidden="true"></i></a>
+          <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official " aria-hidden="true"></i></a>
+        </div>
       </div>
-    </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
