@@ -150,7 +150,7 @@ position: relative;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-   
+
 }
 .sticky li p a{
     text-decoration:none;
@@ -159,8 +159,8 @@ position: relative;
     font-size: 15px;
     display: flex;
     justify-content: flex-start;
-    
-      
+
+
 }
 .sticky li p a:hover{
     text-decoration:none;
@@ -169,3 +169,11 @@ position: relative;
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
+
+/* ========= MARIO FOOTER ARRANGEMENT ========================= */
+.footermain {
+  background: #0D0D0D;
+}
+.redbutton {
+  background: red;
+}
