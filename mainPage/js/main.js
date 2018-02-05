@@ -57,6 +57,11 @@ $('#bfg').on("click", function () {
   $('#bfgModal').modal('show')
 })
 //==============================================
+// BUTTON TO TOP FUNCTION
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 //==================================== FEATURED MOVIES SECTION =================================================
 //==================================== FEATURED MOVIES SECTION =================================================
@@ -90,10 +95,11 @@ $( document ).ready(function(){
   $(".featuredMoviesContainer2").toggle()
   $(".moreMovies").toggle();
   $(".lessMovies").toggle();
- 
+
 })
 //==================================== FEATURED MOVIES SECTION END =================================================
 //==================================== FEATURED MOVIES SECTION END =================================================
+
 
 //==================================== SHOP MOVIES SECTION=====================================================
 //==================================== SHOP MOVIES SECTION=====================================================
@@ -111,3 +117,4 @@ $(".shopMoviesButtons").click(function(){
 //==================================== SHOP MOVIES SECTION END=====================================================
 //==================================== SHOP MOVIES SECTION END=====================================================
 //==================================== SHOP MOVIES SECTION END=====================================================
+
