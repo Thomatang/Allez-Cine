@@ -147,47 +147,44 @@
 
   <!--==================================NAVBAR=============================   -->
   <!--==================================NAVBAR=============================   -->
-
+  
   <div class="jumbonavbar">
-    <nav class="navbar navbar-toggleable-md navbar-light">
-      <div class="col-sm">
-        <!-- AllezCine Logo Col -->
-        <h2>
-        <a href="index.html">AllezCine</a>
-      </h2>
-      </div>
-      <div class="col-sm">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="col-sm">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Comedy</a>
-            <a class="dropdown-item" href="#">Western</a>
-            <a class="dropdown-item" href="#">Fiction</a>
-          </div>
+  <nav class="navbar navbar-dark fixed-top navbar-collapse-sm navbar-expand-lg d-flex align-items-center" id="main-nav">
+    <a class="navbar-brand" href="#top-page">
+      <span class="primaryColor">Allez</span>Cine!</a>
+  
+    <!-- Toggle button for responsive -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopMenu" aria-controls="shopMenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="shopMenu">
+      <ul class="navbar-nav mr-auto d-flex justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" href="#top-page"><span class="primaryColor">Home</span></a>
         </li>
-      </div>
-      <div class="col-sm">
-        <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-      </div>
-      <div class="col-sm">
-        <a href="#">Contact</a>
-      </div>
-
+        <li class="nav-item">
+          <a class="nav-link" href="#featured-movies">Featured Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#featured-tvshows">Featured TV Series</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#shop-movies">Shop Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact</a>
+        </li>
+      </ul>
       <form class="form-inline">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
-          <span class="input-group-addon" id="basic-addon1">
-          <a href="#">&#128270;</a>
-        </span>
+          <input class="form-control searchBar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
         </div>
       </form>
-    </nav>
+    </div>
+  </nav>
     <!--==================================NAVBAR END=============================   -->
     <!--==================================NAVBAR END=============================   -->
 
