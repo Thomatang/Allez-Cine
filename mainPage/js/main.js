@@ -5,6 +5,6 @@ function topFunction() {
 }
 // MODAL CONTACT US
 
-    $("#sendmsg").click(function(){
+    $("#sendmsg").on("click",function(){
         $("#myModal").modal("show");
     });

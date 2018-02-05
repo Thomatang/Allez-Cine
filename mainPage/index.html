@@ -372,7 +372,7 @@
       <div class="row">
         <div class="col-sm">
           <form class="contactcontainer3" action="index.html" method="post">
-            <textarea name="name" class="col-12 contactmessage" placeholder="YOUR MESSAGE" rows="8"></textarea>
+            <textarea name="name" class="col-12 contactmessage" id="yourMsg" placeholder="YOUR MESSAGE" rows="8"></textarea>
           </form>
         </div>
       </div>
@@ -381,7 +381,7 @@
           <button type="button" name="button" class="redbutton" id="sendmsg" data-toggle="modal" data-target="#myModal">SEND MESSAGE</button>
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal" id="myModal" role="dialog">
           <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -390,9 +390,10 @@
                 <h4 class="modal-title">Your Message</h4>
               </div>
               <div class="modal-body">
-                <p></p>
+                <p id="submitTxt"></p>
               </div>
               <div class="modal-footer">
+                <button type="button" class="btn btn-default" name="button">Submit</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
