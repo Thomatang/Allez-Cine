@@ -1,4 +1,3 @@
-
 /* The Opening Modal (background) */
 .modal {
     /* display: none; /* Hidden by default */ */
@@ -50,6 +49,8 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+
 
 .adultButton:hover{
   background-color: #f35626;
@@ -170,16 +171,6 @@ position: relative;
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS END================*/
 
-/* ========= MARIO FOOTER ARRANGEMENT ========================= */
-.footermain {
-  background: #0D0D0D;
-}
-.redbutton {
-  background: red;
-}
-
-
-
 /*==================================== SHOP MOVIES SECTION ====================== */
 /*==================================== SHOP MOVIES SECTION ====================== */
 /*==================================== SHOP MOVIES SECTION ====================== */
@@ -208,6 +199,124 @@ iframe{
 /*==================================== SHOP MOVIES SECTION END====================== */
 /*==================================== SHOP MOVIES SECTION END====================== */
 
+
+
+/* ========= MARIO FOOTER ARRANGEMENT ========================= */
+.footermain {
+  background: #0D0D0D;
+}
+.redbutton {
+  background: red;
+}
+
+/* ======================= REST OF MARIO CSS LAYOUT CLASSES ======================================== */
+
+.accountbuttons {
+  background: #061621;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 2.5px 5px 2.5px 5px;
+  text-decoration: none;
+}
+
+.carded {
+  background: #EEEDF2;
+  border-bottom: 1px grey solid;
+}
+
+.redbar {
+  color: #ffffff;
+}
+
+.redtext {
+  color: red;
+  text-align: right;
+}
+
+.redbutton {
+  color: #ffffff;
+  font-size: 16px;
+  background: #e84545;
+  padding: 2.5px 5px 2.5px 5px;
+  text-decoration: none;
+}
+
+
+.hoverredbtn {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #9e9e9e;
+  padding: 2.5px 5px 2.5px 5px;
+  text-decoration: none;
+}
+
+.hoverredbtn:hover {
+  background: #e84545;
+  text-decoration: none;
+}
+
+.footermain {
+  background: #0D0D0D;
+}
+
+.footertitles {
+  color: #7A7B75;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.btmsocialbuttons {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subtitle {
+  color: red;
+}
+
+.footerpics {
+  width: 25%;
+  height: 30%;
+}
+
+.contactcontainer {
+  padding-left: 2;
+  padding-right: 0;
+}
+
+.contactcontainer2 {
+  padding-right: 2;
+  padding-left: 0;
+}
+
+.contactcontainer3 {
+  height: 200%;
+}
+
+
+.flexspacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centraltext {
+  display: flex;
+  justify-content: center;
+}
+
+.sectiontitle {
+  border-left: red 8px solid;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+
+
 /* BACK TO TOP STYLING
 /* Back to top button */
 #arrowBtn {
@@ -229,4 +338,3 @@ iframe{
 #arrowBtn:hover {
     background-color: pink; /* Add a dark-grey background on hover */
 }
-
