@@ -9,53 +9,53 @@
   <link rel="stylesheet" href="styles/style.css">
   <script src="https://use.fontawesome.com/10338cf8ad.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+  <script src="js/main.js"></script>
   <title>AllezCine!</title>
 </head>
 
 <body>
   <div class="jumbonavbar">
-  <nav class="navbar navbar-toggleable-md navbar-light">
-    <div class="col-sm">
-      <!-- AllezCine logo goes here -->
-      <h2><a href="index.html">AllezCine</a></h2>
-    </div>
-    <div class="col-sm">
-      <a href="index.html">Home</a>
-    </div>
-    <div class="col-sm">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Comedy</a>
-          <a class="dropdown-item" href="#">Western</a>
-          <a class="dropdown-item" href="#">Fiction</a>
-        </div>
-      </li>
-    </div>
-    <div class="col-sm">
-      <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-    </div>
-    <div class="col-sm">
-      <a href="#">Contact</a>
-    </div>
-
-    <form class="form-inline">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
-        <span class="input-group-addon" id="basic-addon1"><a href="#">&#128270;</a></span>
+    <nav class="navbar navbar-toggleable-md navbar-light">
+      <div class="col-sm">
+        <!-- AllezCine logo goes here -->
+        <h2><a href="index.html">AllezCine</a></h2>
       </div>
-    </form>
-  </nav>
+      <div class="col-sm">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="col-sm">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Comedy</a>
+            <a class="dropdown-item" href="#">Western</a>
+            <a class="dropdown-item" href="#">Fiction</a>
+          </div>
+        </li>
+      </div>
+      <div class="col-sm">
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+        <button type="button" name="button"></button>
+      </div>
+      <div class="col-sm">
+        <a href="#">Contact</a>
+      </div>
 
-  <div class="row bg-danger">
-    <div class="col-sm" class="redbar">
-      &#9990; (+000) 009 455 4088 <button type="button" name="button" class="accountbuttons">Login</button><button type="button" name="button" class="accountbuttons">Register</button>
+      <form class="form-inline">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recherche" aria-describedby="basic-addon1">
+          <span class="input-group-addon" id="basic-addon1"><a href="#">&#128270;</a></span>
+        </div>
+      </form>
+    </nav>
+
+    <div class="row bg-danger">
+      <div class="col-sm" class="redbar">
+        &#9990; (+000) 009 455 4088 <button type="button" name="button" class="accountbuttons">Login</button><button type="button" name="button" class="accountbuttons">Register</button>
+      </div>
     </div>
-  </div>
   </div>
   <div class="container">
     <div class="card">
@@ -337,11 +337,11 @@
 
     </div>
   </div>
-    <div class="row">
-      <div class="col-sm sectiontitle">
-        <h2>Contact Us</h2>
-      </div>
+  <div class="row">
+    <div class="col-sm sectiontitle">
+      <h2>Contact Us</h2>
     </div>
+  </div>
   </div>
   <div class="container">
     <div class="card">
@@ -372,13 +372,31 @@
       <div class="row">
         <div class="col-sm">
           <form class="contactcontainer3" action="index.html" method="post">
-            <textarea name="name" class="col-12" placeholder="YOUR MESSAGE" rows="8"></textarea>
+            <textarea name="name" class="col-12 contactmessage" placeholder="YOUR MESSAGE" rows="8"></textarea>
           </form>
         </div>
       </div>
       <div class="row">
         <div class="col-sm">
-          <button type="button" name="button" class="redbutton">SEND MESSAGE</button>
+          <button type="button" name="button" class="redbutton" id="sendmsg" data-toggle="modal" data-target="#myModal">SEND MESSAGE</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Your Message</h4>
+              </div>
+              <div class="modal-body">
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -416,24 +434,24 @@
         <p>MOVIES</p>
         <p>HORROR</p>
       </div>
-         <div class="col-sm-2">
-          <h5>Review Movies</h5>
-          <button type="button" name="button">Comedy</button>
-          <button type="button" name="button">Horror</button>
-          <button type="button" name="button">Historical</button>
-          <button type="button" name="button">Romantic</button>
-          <button type="button" name="button">Love</button>
-          <button type="button" name="button">Action</button>
-          <button type="button" name="button">Reviews</button>
-          <button type="button" name="button">Comedy</button>
-          <button type="button" name="button">Horror</button>
-          <button type="button" name="button">Historical</button>
-          <button type="button" name="button">Romantic</button>
-          <button type="button" name="button">Love</button>
-          <button type="button" name="button">Comedy</button>
-          <button type="button" name="button">Horror</button>
-          <button type="button" name="button">Historical</button>
-        </div>
+      <div class="col-sm-2">
+        <h5>Review Movies</h5>
+        <button type="button" name="button">Comedy</button>
+        <button type="button" name="button">Horror</button>
+        <button type="button" name="button">Historical</button>
+        <button type="button" name="button">Romantic</button>
+        <button type="button" name="button">Love</button>
+        <button type="button" name="button">Action</button>
+        <button type="button" name="button">Reviews</button>
+        <button type="button" name="button">Comedy</button>
+        <button type="button" name="button">Horror</button>
+        <button type="button" name="button">Historical</button>
+        <button type="button" name="button">Romantic</button>
+        <button type="button" name="button">Love</button>
+        <button type="button" name="button">Comedy</button>
+        <button type="button" name="button">Horror</button>
+        <button type="button" name="button">Historical</button>
+      </div>
       <div class="col-sm-2 d-flex flex-column justify-content-start">
         <h5>Latest Movies</h5>
         <p>Evelet ui Molesti</p>
@@ -459,17 +477,17 @@
 
       </div>
     </div>
-      <div class="row">
-        <div class="col-sm d-flex flex-row justify-content-center">
-          <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official " aria-hidden="true"></i></a>
-          <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter " aria-hidden="true"></i></a>
-          <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
-          <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube " aria-hidden="true"></i></a>
-          <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official " aria-hidden="true"></i></a>
-        </div>
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center">
+        <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official " aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+        <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube " aria-hidden="true"></i></a>
+        <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official " aria-hidden="true"></i></a>
       </div>
+    </div>
   </footer>
-  <script src="js/main.js"></script>
+
 </body>
 
 </html>
