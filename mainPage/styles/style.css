@@ -178,6 +178,36 @@ position: relative;
   background: red;
 }
 
+
+
+/*==================================== SHOP MOVIES SECTION ====================== */
+/*==================================== SHOP MOVIES SECTION ====================== */
+/*==================================== SHOP MOVIES SECTION ====================== */
+/*==================================== SHOP MOVIES SECTION ====================== */
+.shopMoviesButtons {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 15px;
+}
+
+iframe{
+    border: solid black 1px;
+}
+.videoCard {
+    background-color: #0e0e0e;
+    color: red;
+}
+.contentColumn {
+    color: #696967;
+}
+
+/*==================================== SHOP MOVIES SECTION END====================== */
+/*==================================== SHOP MOVIES SECTION END====================== */
+/*==================================== SHOP MOVIES SECTION END====================== */
+/*==================================== SHOP MOVIES SECTION END====================== */
+
 /* BACK TO TOP STYLING
 /* Back to top button */
 #arrowBtn {
@@ -199,3 +229,4 @@ position: relative;
 #arrowBtn:hover {
     background-color: pink; /* Add a dark-grey background on hover */
 }
+
