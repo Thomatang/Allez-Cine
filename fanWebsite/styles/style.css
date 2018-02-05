@@ -13,7 +13,8 @@ nav {
 }
 
 .navbar {
-    height: 5em;
+    height: 15vh;
+    ;
     width: 100%;
     background-color: black;
     ;
@@ -28,7 +29,8 @@ nav {
 .navbar span {
     font-family: 'watchmen';
     color: gold;
-    font-size: 5em;
+    font-size: 14vh;
+    padding: 0vh;
 }
 
 .navbar a {
@@ -50,7 +52,7 @@ nav {
 /* caroussel start */
 
 .content1 {
-    margin-top: 80px;
+    margin-top: 14.5vh;
 }
 
 .carousel-inner img {
@@ -71,7 +73,7 @@ nav {
 }
 
 .hero {
-    height: 16.66vh;
+    height: 14.16vh;
     width: 100%;
     background-color: black;
     border-top: 1vh solid gold;
@@ -83,11 +85,11 @@ nav {
     font-family: 'watchmen';
     font-size: 11vh;
     color: gold;
-    padding-top: 5.6vh;
+    padding-top: 4vh;
 }
 
 .hero .logo {
-    height: 15vh;
+    height: 13.8vh;
     width: auto;
     padding-bottom: 5vh;
 }
@@ -180,6 +182,68 @@ nav {
     width: 100vw;
     height: 100vh;
     background-color: gold;
+}
+
+#black {
+    position: absolute;
+    width: 9vw;
+    height: 18vh;
+    background-image: url("../image/black.png");
+    opacity: 0.7;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.flash {
+    position: relative;
+    width: 800px;
+    height: auto;
+    right: 200px;
+    bottom: 200px
+}
+
+.setup {
+    width: 9vw;
+    height: 18vh;
+    overflow: hidden;
+    margin: 1px;
+}
+
+#black:hover {
+    opacity: 0;
+    position: absolute;
+    animation: flash 0.5s ease-out;
+    width: 9vw;
+    height: 18vh;
+}
+
+.chat {
+    height: 75vh;
+    width: auto;
+    pointer-events: all;
+    position: absolute;
+    z-index: 1000;
+    align-self: center;
+}
+
+.thumbnails {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    position: absolute;
+}
+
+.modal-content {
+    border: none;
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        background-image: none;
+    }
 }
 
 
