@@ -4,11 +4,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 // MODAL CONTACT US
-$(document).ready(function(){
+
     $("#sendmsg").click(function(){
         $("#myModal").modal("show");
     });
-    $("#myModal").on('show.bs.modal', function () {
-
-       });
-});
