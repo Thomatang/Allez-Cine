@@ -62,3 +62,40 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//==================================== FEATURED MOVIES SECTION =================================================
+//==================================== FEATURED MOVIES SECTION =================================================
+  //show ALL movies when click on "ALL" button
+$("#allMovies").on("click", function(){
+  $(".featuredMovies").show();
+})
+  // only display Action movies when clicking on "Action" button
+$("#actionMovies").on("click", function () {
+  $(".thriller, .comedy").hide();
+  $(".action").show();
+})
+// only display Thrillers movies when clicking on "Thrillers" button
+$("#thrillerMovies").on("click", function () {
+  $(".action, .comedy").hide();
+  $(".thriller").show();
+})
+// only display Comedy movies when clicking on "Comedies" button
+$("#comedyMovies").on("click", function () {
+  $(".action, .thriller").hide();
+  $(".comedy").show();
+})
+
+// hide second movie container when opening the document
+$( document ).ready(function(){
+  $(".featuredMoviesContainer2").hide()
+  $(".lessMovies").hide();
+})
+// toggle content as user clicks on "MORE MOVIES" AND "LESS MOVIES" buttons
+ $("#toggleMoviesButton1, #toggleMoviesButton2").on("click", function(){
+  $(".featuredMoviesContainer2").toggle()
+  $(".moreMovies").toggle();
+  $(".lessMovies").toggle();
+
+})
+//==================================== FEATURED MOVIES SECTION END =================================================
+//==================================== FEATURED MOVIES SECTION END =================================================
