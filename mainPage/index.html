@@ -926,12 +926,28 @@
       </div>
       <div class="row">
         <div class="col-sm">
-          <button type="button" name="button" class="redbutton">SEND MESSAGE</button>
+          <button type="button" name="button" class="redbutton" id="submitMsg" data-target="#msgModal" data-toggle="modal">SEND MESSAGE</button>
         </div>
       </div>
     </div>
   </div>
-
+  <!-- Contact Us Modal Start -->
+  <div class="modal fade" id="msgModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Confirm your Message?</h3>
+        </div>
+        <div class="modal-body">
+          <p id="userMsg"></p>
+        </div>
+        <div class="modal-footer">
+         <button type="button" name="button" data-dismiss="modal" class="redbutton">Close</button>
+         <button type="button" name="button" class="redbutton">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer Beggining -->
   <footer class="footermain">
     <div class="row">
