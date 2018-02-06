@@ -164,3 +164,12 @@ $(document).ready(function(){
 })
 
 // =================================== CONTACT MESSAGE MODAL END ==================================================
+
+//==================================== FOOTER ======================================
+$('.grid').isotope(
+  {
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  }
+);

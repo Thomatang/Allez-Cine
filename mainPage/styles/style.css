@@ -369,3 +369,19 @@ font-family: 'Open Sans' , sans-serif;
     background-color: transparent;
     margin-right: 25px;
 }
+
+
+/*=========================== ISOTOPE masonry-style layout in footer ========================*/
+.grid-item { 
+  white-space: nowrap;
+  background-color: #232424;
+  margin: 2px;
+  color: #908d8a;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+
+ 
+  
