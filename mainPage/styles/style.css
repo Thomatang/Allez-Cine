@@ -2,7 +2,7 @@
 .modal {
     /* display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 33; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -18,8 +18,9 @@
 
 #ageModal {
   width: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   border: none;
+
 }
 /* Modal Content/Box */
 .modal-content {
@@ -255,7 +256,7 @@ iframe{
   text-align: right;
 }
 .carousel-caption{
-  z-index: 0;
+  z-index: 0.5;
 }
 .redbutton {
   color: #ffffff;
