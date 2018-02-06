@@ -1,6 +1,6 @@
 /* The Opening Modal (background) */
 .modal {
-    /* display: none; /* Hidden by default */ */
+    /* display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -24,7 +24,7 @@
     border: 1px solid #888;
     text-align: center;
     font-family: sans-serif;
-    font-size: 35px;
+    font-size: 18px;
 }
 
 .popupText{
@@ -203,16 +203,6 @@ iframe{
 /*==================================== SHOP MOVIES SECTION END====================== */
 /*==================================== SHOP MOVIES SECTION END====================== */
 
-
-
-/* ========= MARIO FOOTER ARRANGEMENT ========================= */
-.footermain {
-  background: #0D0D0D;
-}
-.redbutton {
-  background: red;
-}
-
 /* ======================= REST OF MARIO CSS LAYOUT CLASSES ======================================== */
 
 .accountbuttons {
@@ -273,10 +263,11 @@ iframe{
 }
 
 .btmsocialbuttons {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px;
+  border: 2px solid grey;
 }
 
 .subtitle {
@@ -342,8 +333,11 @@ iframe{
 #arrowBtn:hover {
     background-color: pink; /* Add a dark-grey background on hover */
 }
+/* ======================= THIS IS ONLY A TEST ======================== */
+body {
+font-family: 'Open Sans' , sans-serif;
 
-
+}
 
 
 /*============================NAVBAR ===================================================== */
@@ -373,5 +367,5 @@ iframe{
 }
 .searchBar {
     background-color: transparent;
+    margin-right: 25px;
 }
-
