@@ -306,7 +306,8 @@ iframe{
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
-  border: 2px solid grey;
+  border: 1px solid grey;
+  color: grey;
 }
 
 .subtitle {
