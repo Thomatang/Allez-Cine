@@ -95,6 +95,7 @@
   display: none;
 }
 
+
 /*  JUMBOTRON PIC RESIZE */
 .jumbotronPic {
 position: relative;
@@ -218,7 +219,15 @@ iframe{
   margin-top: 1px;
   margin-bottom: 1px;
 }
+.card{
+  border: none;
+}
 
+.shopcard {
+  background-color: lightgrey;
+  border-radius: 0;
+  margin-bottom: 1px;
+}
 
 .accountbuttons {
   background: #061621;
@@ -245,7 +254,9 @@ iframe{
   color: red;
   text-align: right;
 }
-
+.carousel-caption{
+  z-index: 0;
+}
 .redbutton {
   color: #ffffff;
   font-size: 18px;
