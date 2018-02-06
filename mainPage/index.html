@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <title>Allez-Cine</title>
+  <script src="https://use.fontawesome.com/10338cf8ad.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script>
@@ -146,44 +148,43 @@
 
   <!--==================================NAVBAR=============================   -->
   <!--==================================NAVBAR=============================   -->
-  
+
   <div class="jumbonavbar">
-  <nav class="navbar navbar-dark fixed-top navbar-collapse-sm navbar-expand-lg d-flex align-items-center" id="main-nav">
-    <a class="navbar-brand" href="#top-page">
+    <nav class="navbar navbar-dark fixed-top navbar-collapse-sm navbar-expand-lg d-flex align-items-center" id="main-nav">
+      <a class="navbar-brand" href="#top-page">
       <span class="primaryColor">Allez</span>Cine!</a>
-  
-    <!-- Toggle button for responsive -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopMenu" aria-controls="shopMenu" aria-expanded="false"
-      aria-label="Toggle navigation">
+
+      <!-- Toggle button for responsive -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopMenu" aria-controls="shopMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="shopMenu">
-      <ul class="navbar-nav mr-auto d-flex justify-content-around">
-        <li class="nav-item">
-          <a class="nav-link" href="#top-page" id="homeButton"><span class="primaryColor">Home</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#featured-movies" id="featuredMoviesButton">Featured Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#featured-tvshows" id="featuredSeriesButton">Featured TV Series</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#shop-movies" id="shopMoviesButton">Shop Movies</a>
-        </li>
-        <li class="nav-item mx-4">
-          <a class="nav-link" href="#contact-us" id="contactUsButton">Contact</a>
-        </li>
-      </ul>
-      <form class="form-inline">
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="shopMenu">
+        <ul class="navbar-nav mr-auto d-flex justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link" href="#top-page" id="homeButton"><span class="primaryColor">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-movies" id="featuredMoviesButton">Featured Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-tvshows" id="featuredSeriesButton">Featured TV Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop-movies" id="shopMoviesButton">Shop Movies</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#contact-us" id="contactUsButton">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline">
           <input class="form-control searchBar" type="search" placeholder="Search" aria-label="Search" id="searchBar">
           <div class="input-group-append">
-        </div>
-      </form>
-    </div>
-  </nav>
+          </div>
+        </form>
+      </div>
+    </nav>
     <!--==================================NAVBAR END=============================   -->
     <!--==================================NAVBAR END=============================   -->
 
@@ -418,83 +419,169 @@
       <button type="button" name="button" class="hoverredbtn" id="comedyMovies">Comedies</button>
     </div>
     <div class="row">
-     <div class="card-deck">
-      <div class="card featuredMovies thriller">
-        <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
-        <p>God's Compass</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies comedy">
-        <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
-        <p>Bad Moms</p>
-        <p>2016</p>
-      </div>
-      <div class="card  featuredMovies action">
-        <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
-        <p>Jason Bourne</p>
-        <p>2016</p>
-      </div>
-      <div class="card  featuredMovies thriller">
-        <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
-        <p>The Rezort</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies comedy">
-        <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
-        <p>Peter Rabbit</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies thriller">
-        <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
-        <p>ISRA 88</p>
-        <p>2016</p>
-      </div>
-     </div>
-    </div>
-    <div class="row">
-     <div class="card-deck">
-      <div class="card featuredMovies action">
-        <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
-        <p>War Dogs</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies">
-        <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
-        <p>The Other Side</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies action">
-        <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
-        <p>Captain America: Civil War</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies comedy">
-        <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
-        <p>The Secret Life of Pets</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies comedy">
-        <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
-        <p>The Jungle Book</p>
-        <p>2016</p>
-      </div>
-      <div class="card featuredMovies action">
-        <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
-        <p>Asassin's Creed</p>
-        <p>2016</p>
-      </div>
-     </div>
-    </div>
-    <div class="container featuredMoviesContainer2">
-      <div class="row">
-       <div class="card-deck">
+      <div class="card-deck">
         <div class="card featuredMovies thriller">
           <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
           <p>God's Compass</p>
           <p>2016</p>
         </div>
-        <div class="card">
+        <div class="card featuredMovies comedy">
           <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
+          <p>Bad Moms</p>
+          <p>2016</p>
+        </div>
+        <div class="card  featuredMovies action">
+          <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+          <p>Jason Bourne</p>
+          <p>2016</p>
+        </div>
+        <div class="card  featuredMovies thriller">
+          <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+          <p>The Rezort</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+          <p>Peter Rabbit</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies thriller">
+          <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+          <p>ISRA 88</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card featuredMovies action">
+          <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+          <p>War Dogs</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies">
+          <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+          <p>The Other Side</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies action">
+          <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
+          <p>Captain America: Civil War</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+          <p>The Secret Life of Pets</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+          <p>The Jungle Book</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies action">
+          <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
+          <p>Asassin's Creed</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="container featuredMoviesContainer2">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card featuredMovies thriller">
+            <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+            <p>God's Compass</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
+            <p>Bad Moms</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+            <p>Jason Bourne</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+            <p>The Rezort</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+            <p>Peter Rabbit</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+            <p>ISRA 88</p>
+            <p>2016</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+            <p>War Dogs</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+            <p>The Other Side</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
+            <p>Captain America: Civil War</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+            <p>The Secret Life of Pets</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+            <p>The Jungle Book</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
+            <p>Asassin's Creed</p>
+            <p>2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" name="button" class="redbutton moreMovies" id="toggleMoviesButton1">MORE MOVIES</button>
+      <button type="button" name="button" class="redbutton lessMovies" id="toggleMoviesButton2">LESS MOVIES</button>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="sectiontitle" id="featuredSeriesSection">FEATURED SERIES TV</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <button type="button" name="button" class="hoverredbtn">All</button>
+      <button type="button" name="button" class="hoverredbtn">Action</button>
+      <button type="button" name="button" class="hoverredbtn">Policiers</button>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card">
+          <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+          <p>God's Compass</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/badmoms.jpg" alt="Bad moms" class="img-fluid">
           <p>Bad Moms</p>
           <p>2016</p>
         </div>
@@ -518,10 +605,10 @@
           <p>ISRA 88</p>
           <p>2016</p>
         </div>
-       </div>
       </div>
-      <div class="row">
-       <div class="card-deck">
+    </div>
+    <div class="row">
+      <div class="card-deck">
         <div class="card">
           <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
           <p>War Dogs</p>
@@ -533,125 +620,39 @@
           <p>2016</p>
         </div>
         <div class="card">
-          <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
-          <p>Captain America: Civil War</p>
+          <img src="../images/capmurica.jpg" alt="Civil War" class="img-fluid">
+          <p>Civil War: Captain America</p>
           <p>2016</p>
         </div>
         <div class="card">
-          <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+          <img src="../images/pets.jpg" alt="The Secret Life of Pets" class="img-fluid">
           <p>The Secret Life of Pets</p>
           <p>2016</p>
         </div>
         <div class="card">
           <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
-          <p>The Jungle Book</p>
+          <p>The Jungle Block</p>
           <p>2016</p>
         </div>
         <div class="card">
-          <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
-          <p>Asassin's Creed</p>
+          <img src="../images/asasincreed.jpg" alt="Assasin's Creed 3" class="img-fluid">
+          <p>Asassin's Creed 3</p>
           <p>2016</p>
         </div>
       </div>
     </div>
-   </div>
-    <div class="row">
-      <button type="button" name="button" class="redbutton moreMovies" id="toggleMoviesButton1">MORE MOVIES</button>
-      <button type="button" name="button" class="redbutton lessMovies" id="toggleMoviesButton2">LESS MOVIES</button>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm">
-      <h2 class="sectiontitle" id="featuredSeriesSection">FEATURED SERIES TV</h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <button type="button" name="button" class="hoverredbtn">All</button>
-      <button type="button" name="button" class="hoverredbtn">Action</button>
-      <button type="button" name="button" class="hoverredbtn">Policiers</button>
-    </div>
-    <div class="row">
-     <div class="card-deck">
-      <div class="card">
-        <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
-        <p>God's Compass</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/badmoms.jpg" alt="Bad moms" class="img-fluid">
-        <p>Bad Moms</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
-        <p>Jason Bourne</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
-        <p>The Rezort</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
-        <p>Peter Rabbit</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
-        <p>ISRA 88</p>
-        <p>2016</p>
-      </div>
-    </div>
-   </div>
-    <div class="row">
-     <div class="card-deck">
-      <div class="card">
-        <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
-        <p>War Dogs</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
-        <p>The Other Side</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/capmurica.jpg" alt="Civil War" class="img-fluid">
-        <p>Civil War: Captain America</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/pets.jpg" alt="The Secret Life of Pets" class="img-fluid">
-        <p>The Secret Life of Pets</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
-        <p>The Jungle Block</p>
-        <p>2016</p>
-      </div>
-      <div class="card">
-        <img src="../images/asasincreed.jpg" alt="Assasin's Creed 3" class="img-fluid">
-        <p>Asassin's Creed 3</p>
-        <p>2016</p>
-      </div>
-    </div>
-   </div>
     <div class="row">
       <button type="button" name="button" class="redbutton">MORE MOVIES</button>
     </div>
   </div>
   <!--========================================SHOP MOVIES SECTION ================================= -->
-   <!--========================================SHOP MOVIES SECTION ================================= -->
-   <!--========================================SHOP MOVIES SECTION ================================= -->
-   <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
   <div class="shopMoviesSection col-12">
     <div class="row">
       <div class="col-sm">
-        <h2>SHOP MOVIES</h2>
+        <h2 class="sectiontitle">SHOP MOVIES</h2>
       </div>
     </div>
     <div class="d-flex justify-content-center">
@@ -849,8 +850,7 @@
               <p>Story line</p>
               <p>:</p>
             </div>
-            <div class="col-8 contentColumn">Storks have moved on from delivering babies to packages. But when an order for a baby appears, the best delivery stork must
-            scramble to fix the error by delivering the baby.</div>
+            <div class="col-8 contentColumn">Storks have moved on from delivering babies to packages. But when an order for a baby appears, the best delivery stork must scramble to fix the error by delivering the baby.</div>
           </div>
           <div class="col-12 d-flex">
             <div class="col-4 p-0 d-flex justify-content-between">
@@ -879,11 +879,11 @@
 
 
   </div>
-    <!--===================================================SHOP MOVIES SECTION END===================================== -->
-    <!--===================================================SHOP MOVIES SECTION END===================================== -->
-    <!--===================================================SHOP MOVIES SECTION END===================================== -->
-    <!--===================================================SHOP MOVIES SECTION END===================================== -->
-    <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -942,8 +942,8 @@
           <p id="userMsg"></p>
         </div>
         <div class="modal-footer">
-         <button type="button" name="button" data-dismiss="modal" class="redbutton">Close</button>
-         <button type="button" name="button" class="redbutton">Submit</button>
+          <button type="button" name="button" data-dismiss="modal" class="redbutton">Close</button>
+          <button type="button" name="button" class="redbutton">Submit</button>
         </div>
       </div>
     </div>
@@ -1008,12 +1008,9 @@
         <p>Earum Rerum Tenet</p>
       </div>
       <div class="col-sm-2 d-flex flex-column justify-content-start">
-        <h5>ALLEZCINE</h5>
+        <h5><span class="primaryColor">ALLEZ</span>CINE</h5>
         <img src="../images/jason.jpg" alt="jason bourne" class="img-fluid">
       </div>
-    </div>
-    <div class="row">
-      <hr>
     </div>
     <div class="row">
       <hr>
@@ -1026,15 +1023,14 @@
       <div class="col-sm d-flex flex-row justify-content-center">
         <h5>CONNECT US</h5>
       </div>
-
     </div>
-    <div class="row  ">
+    <div class="row">
       <div class="col-sm d-flex flex-row justify-content-center">
-        <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official " aria-hidden="true"></i></a>
-        <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter " aria-hidden="true"></i></a>
-        <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
-        <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube " aria-hidden="true"></i></a>
-        <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official " aria-hidden="true"></i></a>
+        <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
