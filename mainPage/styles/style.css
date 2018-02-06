@@ -88,11 +88,15 @@
 
 /*  JUMBOTRON PIC RESIZE */
 .jumbotronPic {
-height: 800px;
 position: relative;
-
+height: 580px;
+background-color: black;
+opacity: 0.5;
 }
 
+.jumbonavbar {
+    background-color: #0D0D0D;
+}
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
 /* ========== SLIDING SOCIAL MEDIA BUTTON ICONS ================*/
@@ -338,3 +342,36 @@ iframe{
 #arrowBtn:hover {
     background-color: pink; /* Add a dark-grey background on hover */
 }
+
+
+
+
+/*============================NAVBAR ===================================================== */
+.navbar{
+    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+}
+.primaryColor {
+    color: #ff4240;
+}
+
+.nav-item:nth-child(2){
+ background-color: rgba(255, 66, 64, 0.5);
+}
+.nav-item:nth-child(3){
+ background-color: rgba(255, 66, 64, 0.5);
+ margin: 0 5px;
+}
+.nav-item:nth-child(4){
+ background-color: rgba(255, 66, 64, 0.5);
+}
+.navbar-brand{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.searchBar {
+    background-color: transparent;
+}
+
