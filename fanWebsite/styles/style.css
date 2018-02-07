@@ -6,6 +6,7 @@
 body {
     margin: 0;
     height: 100%;
+    font-family: "inconsolata";
 }
 
 nav {
@@ -234,6 +235,80 @@ nav {
 
 .modal-content {
     border: none;
+}
+
+.section-contact {
+    background-color: gold;
+    background-image: url("../image/contact.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: gold;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: translateY(3px);
+}
+
+#contact {
+    background-color: gold;
+    padding: 20px;
+}
+
+form {
+    width: 50vw;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    font-family: 'inconsolata';
+    color: gold;
+    text-align: center;
+    vertical-align: middle;
+    height: 18vh;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+a:active {
+    text-decoration: none;
+    color: gold;
 }
 
 @keyframes flash {
