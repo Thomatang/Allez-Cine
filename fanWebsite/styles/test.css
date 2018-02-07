@@ -2,3 +2,32 @@
     font-family: 'watchmen';
     src: url('../font/watchmen.ttf');
 }
+
+.section-shop {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: "inconsolata";
+}
+
+.shop-content {
+    background-color: black;
+}
+
+.shop-item img {
+    width: 190px;
+    height: 190px;
+    margin: 2px;
+}
+
+.shop-item input {
+    width: 190px;
+    height: auto;
+    margin: 2px;
+}
+
+.shop-cart {
+    background-color: gold;
+}
