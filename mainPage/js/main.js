@@ -46,28 +46,28 @@ $("#searchBar").click(function(){ // search bar to remain transparent
 
 $("#homeButton").click(function () {
   $('html, body').animate({
-    scrollTop: $(".jumbonavbar").offset().top
+    scrollTop: $(".jumbonavbar").offset().top-82
   }, 2000);
 })
 
 $("#featuredMoviesButton").click(function(){
   $('html, body').animate({
-    scrollTop: $("#featuredMoviesSection").offset().top
+    scrollTop: $("#featuredMoviesSection").offset().top-82
   }, 2000);
 })
 $("#featuredSeriesButton").click(function () {
   $('html, body').animate({
-    scrollTop: $("#featuredSeriesSection").offset().top
+    scrollTop: $("#featuredSeriesSection").offset().top-82
   }, 2000);
 })
 $("#shopMoviesButton").click(function () {
   $('html, body').animate({
-    scrollTop: $(".shopMoviesSection").offset().top
+    scrollTop: $(".shopMoviesSection").offset().top-82
   }, 2000);
 })
 $("#contactUsButton").click(function () {
   $('html, body').animate({
-    scrollTop: $("#contactUsSection").offset().top
+    scrollTop: $("#contactUsSection").offset().top-82
   }, 2000);
 })
 
