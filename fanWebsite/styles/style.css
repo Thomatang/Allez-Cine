@@ -3,6 +3,11 @@
     src: url('../font/watchmen.ttf');
 }
 
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+}
+
 body {
     margin: 0;
     height: 100%;
@@ -49,11 +54,10 @@ nav {
     text-shadow: 0px 0px 10px aquamarine;
 }
 
+main {}
 
-/* caroussel start */
-
-.content1 {
-    margin-top: 14.5vh;
+.section-news {
+    padding-top: 14.5vh;
 }
 
 .carousel-inner img {
@@ -73,9 +77,14 @@ nav {
     padding-bottom: 12em;
 }
 
+.section-hero {
+    width: 100vw;
+    height: auto;
+}
+
 .hero {
     height: 14.16vh;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     border-top: 1vh solid gold;
     overflow: hidden;
@@ -185,7 +194,7 @@ nav {
     background-color: gold;
 }
 
-#black {
+.black {
     position: absolute;
     width: 9vw;
     height: 18vh;
@@ -223,7 +232,6 @@ nav {
     width: auto;
     pointer-events: all;
     position: absolute;
-    z-index: 1000;
     align-self: center;
 }
 
@@ -235,6 +243,12 @@ nav {
 
 .modal-content {
     border: none;
+}
+
+.section-goodies {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
 .section-contact {
@@ -293,7 +307,7 @@ footer {
     text-align: center;
     vertical-align: middle;
     height: 18vh;
-    width: auto;
+    width: 100vw;
 }
 
 a {
