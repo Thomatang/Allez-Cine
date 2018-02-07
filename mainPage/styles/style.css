@@ -412,16 +412,16 @@ font-family: 'Open Sans' , sans-serif;
 
 .nav-item:nth-child(2){
  background-color: #f44040;
- 
+
 }
 .nav-item:nth-child(3){
  background-color: #f44040;
  margin: 0 5px;
- 
+
 }
 .nav-item:nth-child(4){
  background-color: #f44040;
- 
+
 }
 .navbar-brand{
     font-size: 3em;
@@ -436,7 +436,7 @@ font-family: 'Open Sans' , sans-serif;
 
 
 /*=========================== ISOTOPE masonry-style layout in footer ========================*/
-.grid-item { 
+.grid-item {
   white-space: nowrap;
   background-color: #232424;
   margin: 2px;
@@ -445,7 +445,12 @@ font-family: 'Open Sans' , sans-serif;
   font-size: 12px;
   font-weight: bolder;
 }
+/* =========================== FIRST ROW HOVER PROPERTIES ================================*/
+.filmHovers {
+  transition: .5s ease;
+}
+.filmHovers:hover  {
+  opacity: 0.35;
+}
 
-
- 
-  
+/* =========================== FIRST ROW HOVER PROPERTIES END ===============================*/
