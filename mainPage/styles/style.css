@@ -247,8 +247,15 @@ iframe{
   border-bottom: 1px grey solid;
 }
 
+.firstcardrow {
+  border: 1px lightgrey solid;
+}
+
 .redbar {
   color: #ffffff;
+}
+.phonerow{
+    padding-left: 3em;
 }
 
 .redtext {
@@ -257,6 +264,7 @@ iframe{
 }
 .carousel-caption{
   z-index: 0.5;
+  padding-bottom: 10em;
 }
 .redbutton {
   color: #ffffff;
