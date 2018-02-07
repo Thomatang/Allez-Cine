@@ -1,18 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>Document</title>
+  <title>Allez-Cine</title>
+  <script src="https://use.fontawesome.com/10338cf8ad.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function() {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#aa0000",
+            "text": "#ffdddd"
+          },
+          "button": {
+            "background": "#ff0000"
+          }
+        },
+        "theme": "classic",
+        "position": "bottom-right"
+      })
+    });
+  </script>
 </head>
+
 <body>
-<p>Main Page</p>
+
+  <!-- ================== Social Media STICKIES ====================================-->
+  <!-- ================== Social Media STICKIES ====================================-->
+  <!-- ================== Social Media STICKIES ====================================-->
+  <div class="sticky-container">
+    <ul class="sticky">
+      <li>
+        <img src="img/facebook.png" width="32" height="32">
+        <p>
+          <a href="https://www.facebook.com/" target="_blank">
+            Facebook</a>
+        </p>
+      </li>
+      <li>
+        <img src="img/twitter.png" width="32" height="32">
+        <p>
+          <a href="https://twitter.com/" target="_blank">
+            Twitter</a>
+        </p>
+      </li>
+      <li>
+        <img src="img/google+.png" width="32" height="32">
+        <p>
+          <a href="https://plus.google.com/" target="_blank">
+            Google+</a>
+        </p>
+      </li>
+      <li>
+        <img src="img/pinterest.png" width="32" height="32">
+        <p>
+          <a href="https://www.pinterest.com/" target="_blank">
+            Pinterest</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <!-- ================== Social Media STICKIES END ====================================-->
+  <!-- ================== Social Media STICKIES END====================================-->
+  <!-- ================== Social Media STICKIES END====================================-->
+
+  <!-- The Opening Modal, asking age of users, alowing them to enter or redirecting minors to imdb -->
+  <div id="openingModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content d-flex flex-column align-items-center" id="ageModal">
+      <div class="popupText">
+        <h3>Welcome to <span class="primaryColor">ALLEZ</span>CINE!</h3>
+        <h4>Please confirm your age</h4>
+      </div>
+      <button class="adultButton col-4 offset-2" id="AdultButton"><a href="#">I am 18 or older</a></button>
+      <button class="minorButton col-4 offset-2"><a href="http://www.imdb.com/">I am under 18 years old</a></button>
+    </div>
+  </div>
+
+  <!--==============Login and Registration form modals ==============-->
+  <!--==============Login and Registration form modals ==============-->
+  <!--==============Login and Registration form modals ==============-->
+
+  <div class="modal" tabindex="-1" role="dialog" id="loginModal">
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login Your Allez-Cine Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeButton">
+            <span aria-hidden="true">&times;</span>
+             </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> </div>
+            <div class="form-group">
+
+              <label for="exampleInputPassword1">Password</label>
+
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> </div>
+
+            <div class="form-check">
+
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </br>
+
+              <div id="registerTerms">
+
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I accept the
+                  <a href="">terms and conditions</a>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="loginButton2">Login Account</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="registerButton">Register</button>
+          <button type="submit" class="btn btn-secondary" data-dismiss="modal" id="registerButtonFinal">Complete Registration</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--==================================JUMBONAV=============================   -->
+  <!--==================================JUMBONAV=============================   -->
+  <!--==================================JUMBONAV=============================   -->
+  <!--==================================JUMBONAV=============================   -->
 
 
-<script src="js/main.js"></script>
+
+  <!--==================================NAVBAR=============================   -->
+  <!--==================================NAVBAR=============================   -->
+
+  <div class="jumbonavbar">
+    <nav class="navbar navbar-dark fixed-top navbar-collapse-sm navbar-expand-lg d-flex align-items-center" id="main-nav">
+      <a class="navbar-brand" href="#top-page">
+      <span class="primaryColor">Allez</span>Cine!</a>
+
+      <!-- Toggle button for responsive -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopMenu" aria-controls="shopMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="shopMenu">
+        <ul class="navbar-nav mr-auto d-flex justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link" href="#top-page" id="homeButton"><span class="primaryColor">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-movies" id="featuredMoviesButton">Featured Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-tvshows" id="featuredSeriesButton">Featured TV Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop-movies" id="shopMoviesButton">Shop Movies</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#contact-us" id="contactUsButton">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control searchBar" type="search" placeholder="Search" aria-label="Search" id="searchBar">
+          <div class="input-group-append">
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!--==================================NAVBAR END=============================   -->
+    <!--==================================NAVBAR END=============================   -->
+
+    <!--==================================JUMBOTRON CAROUSEL=============================   -->
+    <!--==================================JUMBOTRON CAROUSEL=============================   -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-caption">
+        <h1>LATEST <span class="primaryColor">ON</span>LINE <span class="primaryColor">MO</span>VIES</h1>
+        <h4>IN SPACE NOONE CAN HEAR YOU SCREAM</h4>
+        <button type="button" name="button" class="redbutton">WATCH TRAILER</button>
+      </div>
+      <div class="carousel-inner jumbotronPic">
+        <div class="carousel-item active ">
+          <img class="d-block w-100" src="../images/menu.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="../images/peter.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../images/junglebook.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+
+
+
+    <!--==================================JUMBOTRON CAROUSEL END=============================   -->
+    <!--==================================JUMBOTRON CAROUSEL END=============================   -->
+
+    <div class="row bg-danger phonerow">
+      <div class="col-sm redbar">
+        &#9990; (+000) 009 455 4088
+        <button type="button" name="button" class="accountbuttons" id="loginButton">Login</button>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--==================================JUMBONAV END=============================   -->
+  <!--==================================JUMBONAV END=============================   -->
+  <!--==================================JUMBONAV END=============================   -->
+  <!--==================================JUMBONAV END=============================   -->
+
+  <div class="container">
+    <div class="card">
+      <div class="card-body firstcardrow">
+        <div class="row">
+          <div class="col-sm">
+            <!-- Modal -->
+            <div class="modal" id="citizenSoldierModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Citizen Soldier</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/F08FcmW46P0">
+                    </iframe>
+                    <p>The true story of some soldiers in a United States Army Infantry Company, part of the Oklahoma National Guard's 45th Thunderbirds Brigade, and their life-changing tour of duty in Afghanistan.</p>
+                    <p>Realisateurs: David Salzberg & Christian Tureaud <br> Annee de Sortie: 2016 <br> Genre: Guerre / Action <br> Acteurs: Jordan Alex, James Tyler Brown, Martin Byrne<br></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal END -->
+            <img class="img-fluid" id="citizenSoldier" src="../images/citizensoldier.jpg" alt="Citizen soldier">
+            <p>Citizen Soldier</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <!-- Modal -->
+            <div class="modal" id="xMenModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">X-Men</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/PfBVIHgQbYk">
+                    </iframe>
+                    <p>They are children of the atom, homo superior, the next link in the chain of evolution. Each was born with a unique genetic mutation, which at puberty manifested itself in extraordinary powers. In a world filled with hate and prejudice,
+                      they are feared by those who cannot accept their differences. Led by Xavier the X-Men fight to protect a world that fears them. They are locked in a battle with former colleague and friend, Magneto who believes humans and mutants
+                      should never co-exist.</p>
+                    <p>Realisateur: Bryan Singer<br>Annee de Sortie: 2000<br>Genre: Sci-Fi<br>Acteurs: Patrick Stewart, Hugh Jackman, Ian McKellen.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal END -->
+            <img class="img-fluid" id="xMen" src="../images/xmen.jpg" alt="X men">
+            <p>X-Men</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <!-- Modal -->
+            <div class="modal" id="greaterModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Greater</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/8k8tjg15wx8">
+                    </iframe>
+                    <p>Told he wasn't good enough to play Division I football, Brandon Burlsworth took a risk and walked on in 1994, and he became the most respected player in the history of the program.</p>
+                    <p>Realisateur: David Hunt <br>Annee de Sortie: 2016<br> Genre: Sport / Family <br> Acteurs: Neal McDonough, Leslie Eastbrook, Christoper Severio </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal END -->
+            <img class="img-fluid" id="greater" src="../images/greater.jpg" alt="Greater">
+            <p>Greater</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <!-- Modal -->
+            <div class="modal" id="theLightBetweenOceansModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">The Light Between Oceans</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/lk7yw00a4fs">
+                    </iframe>
+                    <p>Tom is a World War I veteran who maintains a lighthouse off the shore of Australia with his wife Isabel, a woman desperate to have a baby. Her prayers are answered when an infant washes up on shore in a rowboat. Tom thinks they should
+                      notify the authorities but ultimately gives in to Isabel's wish to keep the girl. Fate strikes again when the couple meet the child's biological mother on the mainland. Now, Tom and Isabel must make a decision that will forever affect
+                      the lives of four people.</p>
+                    <p>Realisateur: Derek Cianfrance <br>Annee de Sortie: 2016<br>Genre: Drama / Romance<br> Acteurs: Micheal Fassbender, Alicia Vikander, Rachel Weisz</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal END -->
+            <img class="img-fluid" id="theLightBetweenOceans" src="../images/lightbetween.jpg" alt="Light Between">
+            <p>The Light Between Oceans</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <!-- Modal -->
+            <div class="modal" id="bfgModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content col-12">
+                  <div class="modal-header">
+                    <h5 class="modal-title">The BFG</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/GZ0Bey4YUGI">
+                    </iframe>
+                    <p>Ten-year-old Sophie is in for the adventure of a lifetime when she meets the Big Friendly Giant (Mark Rylance). Naturally scared at first, the young girl soon realizes that the 24-foot behemoth is actually quite gentle and charming.
+                      As their friendship grows, Sophie's presence attracts the unwanted attention of Bloodbottler, Fleshlumpeater and other giants. After traveling to London, Sophie and the BFG must convince Queen Victoria to help them get rid of all
+                      the bad giants once and for all.</p>
+                    <p>Realisateur: Steven Spielberg<br>Annee de Sortie: 2016 <br>Genre: Adventure / Family <br>Acteurs: Mark Rylance, Ruby Barnhill, Penelope Wilton </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal END -->
+            <img class="img-fluid" id="bfg" src="../images/bigfuckinggiant.jpg" alt="The BFG">
+            <p>The BFG</p>
+            <div class="flexspacing">
+              <p>2016</p>
+              <p>Genre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="sectiontitle" id="featuredMoviesSection">FEATURED MOVIES</h2>
+    </div>
+  </div>
+  <div class="container featuredMoviesContainer1">
+    <div class="row">
+      <button type="button" name="button" class="hoverredbtn" id="allMovies">All</button>
+      <button type="button" name="button" class="hoverredbtn" id="actionMovies">Action</button>
+      <button type="button" name="button" class="hoverredbtn" id="thrillerMovies">Thrillers</button>
+      <button type="button" name="button" class="hoverredbtn" id="comedyMovies">Comedies</button>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card featuredMovies thriller">
+          <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+          <p>God's Compass</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
+          <p>Bad Moms</p>
+          <p>2016</p>
+        </div>
+        <div class="card  featuredMovies action">
+          <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+          <p>Jason Bourne</p>
+          <p>2016</p>
+        </div>
+        <div class="card  featuredMovies thriller">
+          <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+          <p>The Rezort</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+          <p>Peter Rabbit</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies thriller">
+          <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+          <p>ISRA 88</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card featuredMovies action">
+          <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+          <p>War Dogs</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies">
+          <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+          <p>The Other Side</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies action">
+          <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
+          <p>Captain America: Civil War</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+          <p>The Secret Life of Pets</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies comedy">
+          <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+          <p>The Jungle Book</p>
+          <p>2016</p>
+        </div>
+        <div class="card featuredMovies action">
+          <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
+          <p>Asassin's Creed</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="container featuredMoviesContainer2">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card featuredMovies thriller">
+            <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+            <p>God's Compass</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/badmoms.jpg" alt="Bad Moms" class="img-fluid">
+            <p>Bad Moms</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+            <p>Jason Bourne</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+            <p>The Rezort</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+            <p>Peter Rabbit</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+            <p>ISRA 88</p>
+            <p>2016</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+            <p>War Dogs</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+            <p>The Other Side</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/capmurica.jpg" alt="Captain America: Civil War" class="img-fluid">
+            <p>Captain America: Civil War</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/pets.jpg" alt="The Secret Life Of Pets" class="img-fluid">
+            <p>The Secret Life of Pets</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+            <p>The Jungle Book</p>
+            <p>2016</p>
+          </div>
+          <div class="card">
+            <img src="../images/asasincreed.jpg" alt="Assasin's Creed" class="img-fluid">
+            <p>Asassin's Creed</p>
+            <p>2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" name="button" class="redbutton moreMovies" id="toggleMoviesButton1">MORE MOVIES</button>
+      <button type="button" name="button" class="redbutton lessMovies" id="toggleMoviesButton2">LESS MOVIES</button>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <h2 class="sectiontitle" id="featuredSeriesSection">FEATURED SERIES TV</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <button type="button" name="button" class="hoverredbtn">All</button>
+      <button type="button" name="button" class="hoverredbtn">Action</button>
+      <button type="button" name="button" class="hoverredbtn">Policiers</button>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card">
+          <img src="../images/godscompass.jpg" alt="God's Compass" class="img-fluid">
+          <p>God's Compass</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/badmoms.jpg" alt="Bad moms" class="img-fluid">
+          <p>Bad Moms</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/jason.jpg" alt="Jason Bourne" class="img-fluid">
+          <p>Jason Bourne</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/rezort.jpg" alt="The Rezort" class="img-fluid">
+          <p>The Rezort</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/peter.jpg" alt="Peter Rabbit" class="img-fluid">
+          <p>Peter Rabbit</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/isra88.jpg" alt="ISRA 88" class="img-fluid">
+          <p>ISRA 88</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card">
+          <img src="../images/wardogz.jpg" alt="War Dogs" class="img-fluid">
+          <p>War Dogs</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/theotherside.jpg" alt="The Other Side" class="img-fluid">
+          <p>The Other Side</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/capmurica.jpg" alt="Civil War" class="img-fluid">
+          <p>Civil War: Captain America</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/pets.jpg" alt="The Secret Life of Pets" class="img-fluid">
+          <p>The Secret Life of Pets</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/junglebook.jpg" alt="The Jungle Book" class="img-fluid">
+          <p>The Jungle Block</p>
+          <p>2016</p>
+        </div>
+        <div class="card">
+          <img src="../images/asasincreed.jpg" alt="Assasin's Creed 3" class="img-fluid">
+          <p>Asassin's Creed 3</p>
+          <p>2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" name="button" class="redbutton">MORE MOVIES</button>
+    </div>
+  </div>
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <!--========================================SHOP MOVIES SECTION ================================= -->
+  <div class="shopMoviesSection col-12">
+    <div class="row">
+      <div class="col-sm">
+        <h2 class="sectiontitle">SHOP MOVIES</h2>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button class="shopMoviesButtons">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+      <button class="shopMoviesButtons">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="containerShopMovie d-flex">
+      <div class="movieCardColumn col-7">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/swissarmyman-2016-comedie.jpg" alt="Swiss Army Man" class="img-fluid">
+              <p class="d-flex justify-content-center">Swiss Army Man</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/menu.jpg" alt="Me Before You" class="img-fluid">
+              <p class="d-flex justify-content-center">Me Before You</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/deadpool.jpg" alt="Deadpool" class="img-fluid">
+              <p class="d-flex justify-content-center">Deadpool</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/rogueboi.jpg" alt="Rogue One" class="img-fluid">
+              <p class="d-flex justify-content-center">Rogue One</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/storks.jpg" alt="Storks" class="img-fluid">
+              <p class="d-flex justify-content-center">Storks</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/hopeless.jpg" alt="Hopeless" class="img-fluid">
+              <p class="d-flex justify-content-center">Hopeless</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/mechanic.jpg" alt="Mechanic" class="img-fluid">
+              <p class="d-flex justify-content-center">Mechanic</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/timeless.jpg" alt="Timeless" class="img-fluid">
+              <p class="d-flex justify-content-center">Timeless</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="movieCardColumn2 col-7">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/seven-1995-thriller.jpg" alt="Seven" class="img-fluid">
+              <p class="d-flex justify-content-center">Seven</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/zoolander-2001-comedie.jpg" alt="Me Before You" class="img-fluid">
+              <p class="d-flex justify-content-center">Zoolander</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/wardogz.jpg" alt="Deadpool" class="img-fluid">
+              <p class="d-flex justify-content-center">Ward Dogz</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/inception-2010-scifi.jpg" alt="Rogue One" class="img-fluid">
+              <p class="d-flex justify-content-center">Inception</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Storks" class="img-fluid">
+              <p class="d-flex justify-content-center">What We Do in the Shadows</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/thefall-2006-dramatique.jpg" alt="Hopeless" class="img-fluid">
+              <p class="d-flex justify-content-center">The Fall</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/isra88.jpg" alt="Mechanic" class="img-fluid">
+              <p class="d-flex justify-content-center">Isra 88</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card shopcard">
+              <img src="../images/shutterisland-2010-thriller.jpg" alt="Timeless" class="img-fluid">
+              <p class="d-flex justify-content-center">Shutter Island</p>
+              <div class="d-flex justify-content-around">
+                <p>2016</p>
+                <p class="redtext">15 Euro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card videoCard">
+        <div>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/tF6jd0-xRrI">
+          </iframe>
+        </div>
+        <div class="card-block">
+          <div class="col-12 d-flex justify-content-start mt-2">
+            STORKS
+          </div>
+          <div class="col-12 d-flex">
+            <div class="col-4 p-0 d-flex justify-content-between">
+              <p>Story line</p>
+              <p>:</p>
+            </div>
+            <div class="col-8 contentColumn">Storks have moved on from delivering babies to packages. But when an order for a baby appears, the best delivery stork must scramble to fix the error by delivering the baby.</div>
+          </div>
+          <div class="col-12 d-flex">
+            <div class="col-4 p-0 d-flex justify-content-between">
+              <p>Release On</p>
+              <p>:</p>
+            </div>
+            <div class="col-8 contentColumn">April 5, 2016</div>
+          </div>
+          <div class="col-12 d-flex">
+            <div class="col-4 p-0 d-flex justify-content-between">
+              <p>Genre</p>
+              <p>:</p>
+            </div>
+            <div class="col-8 contentColumn">Drama | Adventure | Family</div>
+          </div>
+          <div class="col-12 d-flex">
+            <div class="col-4 p-0 d-flex justify-content-between">
+              <p>Price</p>
+              <p>:</p>
+            </div>
+            <div class="col-8 contentColumn">18$</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <!--===================================================SHOP MOVIES SECTION END===================================== -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2 class="sectiontitle" id="contactUsSection">Contact Us</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container col-10 offset-1">
+    <div class="card">
+      <div class="col-12 d-flex">
+        <div class="col-6 p-2 m-1">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="What's your first name?" class="col-12">
+          </form>
+        </div>
+        <div class="col-6 p-2 m-1">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="and your last?" class="col-12">
+          </form>
+        </div>
+      </div>
+      <div class="col-12 d-flex">
+        <div class="col-sm-6 p-2 m-1">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Type email here." class="col-12">
+          </form>
+        </div>
+        <div class="col-sm-6 p-2 m-1">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="What do you want to talk to us about?" class="col-12">
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <form class="col-10 offset-1" action="index.html" method="post">
+            <textarea name="name" class="col-12 contactmessage" id="yourMsg" placeholder="You can type your message in here." rows="8"></textarea>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <button type="button" name="button" class="redbutton" id="submitMsg" data-target="#msgModal" data-toggle="modal">SEND MESSAGE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Us Modal Start -->
+  <div class="modal fade" id="msgModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Confirm your Message?</h3>
+        </div>
+        <div class="modal-body">
+          <p id="userMsg"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" name="button" data-dismiss="modal" class="redbutton">Close</button>
+          <button type="button" name="button" class="redbutton">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Beggining -->
+  <footer class="footermain">
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center">
+        <h3 class="subtitle mt-5">SUBSCRIBE TO US</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Enter Your Email...">
+          <button type="button" name="button" class="redbutton">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-12 row d-flex justify-content-around m-0 mt-3 p-0">
+      <div class="col-sm-2 d-flex flex-column justify-content-start pl-4 pr-0">
+        <h5 class="footerSubTitle">Release</h5>
+        <p>2016</p>
+        <p>2015</p>
+        <p>2014</p>
+        <p>2013</p>
+        <p>2012</p>
+        <p>2011</p>
+      </div>
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5>Movies</h5>
+        <p>ADVENTURE</p>
+        <p>COMEDY</p>
+        <p>FANTASY</p>
+        <p>ACTION</p>
+        <p>MOVIES</p>
+        <p>HORROR</p>
+      </div>
+
+      <div class="col-sm-2 pr-0">
+        <h5 class="p-0">Review Movies</h5>
+        <div class="grid">
+          <div class="grid-item">Comedy</div>
+          <div class="grid-item">Horror</div>
+          <div class="grid-item">Historical</div>
+          <div class="grid-item">Romantic</div>
+          <div class="grid-item">Love</div>
+          <div class="grid-item">Action</div>
+          <div class="grid-item">Reviews</div>
+          <div class="grid-item">Comedy</div>
+          <div class="grid-item">Horror</div>
+          <div class="grid-item">Historical</div>
+          <div class="grid-item">Romantic</div>
+          <div class="grid-item">Love</div>
+          <div class="grid-item">Comedy</div>
+          <div class="grid-item">Horror</div>
+          <div class="grid-item">Historical</div>
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex flex-column justify-content-start p-0">
+        <h5>Latest Movies</h5>
+          <div class=" d-flex justify-content-center align-items-center ">
+            <img class="w-50 h-25" src="../images/menu.jpg" alt="">
+            <p class="mb-0 p-2">Evelet ui Molesti</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center ">
+            <img class="w-50 h-25" src="../images/menu.jpg" alt="">
+            <p class="mb-0 p-2">Evelet ui Molesti</p>
+          </div>
+          
+      </div>
+      <div class="col-sm-2 d-flex flex-column justify-content-start">
+        <h5><span class="primaryColor">ALLEZ</span>CINE</h5>
+        <img src="../images/jason.jpg" alt="jason bourne" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <hr>
+    </div>
+    <div class="row">
+      <hr>
+      <button onclick="topFunction()" id="arrowBtn" title="Go to top"><img src="../images/arrow-up.png" alt="Back to Top"></button>
+    </div>
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center">
+        <h5>CONNECT US</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm d-flex flex-row justify-content-center p-2">
+        <a href="http://www.facebook.com" class="btmsocialbuttons"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.twitter.com" class="btmsocialbuttons"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com" class="btmsocialbuttons"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a href="http://www.youtube.com" class="btmsocialbuttons"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        <a href="http://plus.google.com" class="btmsocialbuttons"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
