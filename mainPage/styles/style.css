@@ -34,6 +34,9 @@
     font-size: 18px;
 }
 
+
+
+
 .popupText{
   color: white;
   font-weight: bold;
@@ -100,7 +103,7 @@
 /*  JUMBOTRON PIC RESIZE */
 .jumbotronPic {
 position: relative;
-height: 580px;
+height: 600px;
 background-color: black;
 opacity: 0.5;
 }
@@ -315,8 +318,10 @@ iframe{
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
+  margin: 2px;
   border: 1px solid grey;
-  color: grey;
+  color: #fefeff;
+  font-size: x-small;
 }
 
 .subtitle {
@@ -328,7 +333,13 @@ iframe{
   height: 30%;
 }
 
-.contactcontainer {
+footer h5 {
+  color: white;
+  border-bottom: solid 0.5px #2f302a;
+  padding-bottom: 3px;
+}
+
+/* .contactcontainer {
   padding-left: 2;
   padding-right: 0;
 }
@@ -336,7 +347,7 @@ iframe{
 .contactcontainer2 {
   padding-right: 2;
   padding-left: 0;
-}
+} */
 
 .contactcontainer3 {
   height: 200%;
