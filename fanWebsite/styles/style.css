@@ -194,7 +194,7 @@ main {}
     background-color: gold;
 }
 
-.black {
+#over {
     position: absolute;
     width: 9vw;
     height: 18vh;
@@ -219,7 +219,7 @@ main {}
     margin: 1px;
 }
 
-#black:hover {
+#over:hover {
     opacity: 0;
     position: absolute;
     animation: flash 0.5s ease-out;
@@ -227,7 +227,7 @@ main {}
     height: 18vh;
 }
 
-.chat {
+.gallery-content {
     height: 75vh;
     width: auto;
     pointer-events: all;
