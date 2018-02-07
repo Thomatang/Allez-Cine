@@ -315,8 +315,10 @@ iframe{
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
+  margin: 2px;
   border: 1px solid grey;
-  color: grey;
+  color: #fefeff;
+  font-size: x-small;
 }
 
 .subtitle {
@@ -326,6 +328,12 @@ iframe{
 .footerpics {
   width: 25%;
   height: 30%;
+}
+
+footer h5 {
+  color: white;
+  border-bottom: solid 0.5px #2f302a;
+  padding-bottom: 3px;
 }
 
 /* .contactcontainer {
