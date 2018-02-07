@@ -34,6 +34,9 @@
     font-size: 18px;
 }
 
+
+
+
 .popupText{
   color: white;
   font-weight: bold;
@@ -100,7 +103,7 @@
 /*  JUMBOTRON PIC RESIZE */
 .jumbotronPic {
 position: relative;
-height: 580px;
+height: 600px;
 background-color: black;
 opacity: 0.5;
 }
