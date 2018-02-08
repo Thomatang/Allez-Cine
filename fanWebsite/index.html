@@ -2,563 +2,561 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title>WATCHFAN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>WATCHFAN</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <span class="navbar-brand  bounceInLeft" href="#">-wATCHFAn-</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <span class="navbar-brand  bounceInLeft" href="#">-wATCHFAn-</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end bounceInRight" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active" id="newsNav">
-                    <a class="nav-link text-uppercase px-3">news <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase px-3" id="characterNav">character</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase px-3" id="galleryNav">gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase px-3" id="shopNav">shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase pl-3 pr-5" id="contactNav">contact</a>
-                </li>
-            </ul>
+    <div class="collapse navbar-collapse d-flex justify-content-end bounceInRight" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active" id="newsNav">
+          <a class="nav-link text-uppercase px-3">news <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase px-3" id="characterNav">character</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase px-3" id="galleryNav">gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase px-3" id="shopNav">shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase pl-3 pr-5" id="contactNav">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-fluid  p-0 m-0">
+
+    <section id="news" class="section-news">
+      <div id="SlideIntro" class="carousel slide " data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#SlideIntro" data-slide-to="0" class="active"></li>
+          <li data-target="#SlideIntro" data-slide-to="1"></li>
+          <li data-target="#SlideIntro" data-slide-to="2"></li>
+          <li data-target="#SlideIntro" data-slide-to="3"></li>
+          <li data-target="#SlideIntro" data-slide-to="4"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/carousel0.jpg" class="img1" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block carouCaption">
+              <h3>Watchmen: Origins</h3>
+              <p>Watchmen is an American comic book limited series by the British creative team of writer Alan Moore, artist Dave Gibbons and colorist John Higgins. It was published by DC Comics in 1986 and 1987, and collected in a single volume edition
+                in 1987.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel1.jpg" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block carouCaption">
+              <h3>Watchmen: Nowadays</h3>
+              <p>The sequel to Watchmen, entitled Doomsday Clock, is part of the DC Rebirth line of comics, additionally continuing a narrative established with 2016's one-shot DC Universe: Rebirth Special and 2017's crossover The Button, both of which featured Doctor Manhattan in a minor capacity. The miniseries, taking place seven years after the events of Watchmen in November 1992, follows a cancer-ridden Ozymandias as he attempts to locate Doctor Manhattan alongside Rorschach II, the successor of Walter Kovacs</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel2.jpg" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block carouCaption">
+              <h3>Watchmen: Adaptations</h3>
+              <p>The most relevant adaptation was the film version of Watchmen that was realeased in March 2009. An animated film was announced in production during Spring 2017. A television series was also premiered during 2017. The last videogame adpatation was realeased in 2009 matching the major film release.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel3.jpg" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block carouCaption">
+              <h3>Watchmen: The Future.</h3>
+              <p>With both an animated film and and animated tv show in production during 2017 & 2018 the future for the Watchmen looks bright. If these two films are succesful, we can expect more adaptations to other forms of media such as Videogames. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/carousel4.jpg" alt="Slide 4">
+            <div class="carousel-caption d-none d-md-block carouCaption">
+              <h3>Watchmen: The Legacy</h3>
+              <p>A critical and commercial success, Watchmen is highly regarded in the comics industry and is frequently considered by several critics and reviewers as comics' greatest series and graphic novel.In time, the series has also become one of the best-selling graphic novels ever published.Watchmen was the only graphic novel to appear on Time's 2005 "All-Time 100 Greatest Novels" list,[118] where Time critic Lev Grossman described the story as "a heart-pounding, heartbreaking read and a watershed in the evolution of a young medium." It later appeared on Time's 2009 "Top 10 Graphic Novels" list, where Grossman further praised Watchmen, proclaiming "It’s way beyond cliché at this point to call Watchmen the greatest superhero comic ever written-slash-drawn. But it’s true."</p>
+            </div>
+          </div>
         </div>
-    </nav>
-    <main class="container-fluid  p-0 m-0">
 
-        <section id="news" class="section-news">
-            <div id="SlideIntro" class="carousel slide " data-ride="carousel" data-interval="false">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#SlideIntro" data-slide-to="0" class="active"></li>
-                    <li data-target="#SlideIntro" data-slide-to="1"></li>
-                    <li data-target="#SlideIntro" data-slide-to="2"></li>
-                    <li data-target="#SlideIntro" data-slide-to="3"></li>
-                    <li data-target="#SlideIntro" data-slide-to="4"></li>
-                </ul>
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="image/carousel0.jpg" class="img1" alt="Slide 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Intro Watchmen I</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia reprehenderit aliquid repellat, vero alias officiis delectus expedita! Dolore, accusamus tenetur voluptas libero adipisci veritatis ipsam iure recusandae odio minus
-                                provident.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/carousel1.jpg" alt="Slide 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Intro Watchmen II</h3>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/carousel2.jpg" alt="Slide 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Intro Watchmen III</h3>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/carousel3.jpg" alt="Slide 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Intro Watchmen IV</h3>
-                            <p>...</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image/carousel4.jpg" alt="Slide 4">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Intro Watchmen V</h3>
-                            <p>...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#SlideIntro" data-slide="prev">
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#SlideIntro" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#SlideIntro" data-slide="next">
+        <a class="carousel-control-next" href="#SlideIntro" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
-            </div>
-        </section>
-        <section id="character" class="section-hero">
-            <div class="hero comedian d-flex justify-content-start">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+      </div>
+    </section>
+    <section id="character" class="section-hero">
+      <div class="hero comedian d-flex justify-content-start">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                     <img class="logo img-fluid" src="image/comedian.png" alt="">The Comedian
                 </a>
-            </div>
-            <div class="collapse" id="multiCollapseExample1">
-                <div class="card card-body card-comedian">
-                    <p>One of two government-sanctioned heroes (along with Doctor Manhattan) who remains active after the Keene Act is passed in 1977 to ban superheroes.</p>
-                    <p>His murder, which occurs shortly before the first chapter begins, sets the plot of Watchmen in motion. </p>
-                    <p>The character appears throughout the story in flashbacks and aspects of his personality are revealed by other characters.</p>
-                    <p>The Comedian was based on the Charlton Comics character Peacemaker, with elements of the Marvel Comics spy character Nick Fury added. Moore and Gibbons saw The Comedian as "a kind of Gordon Liddy character, only a much bigger, tougher
-                        guy". Richard Reynolds described The Comedian as "ruthless, cynical, and nihilistic, and yet capable of deeper insights than the others into the role of the costumed hero". He attempts to rape the first Silk Spectre in the 1940s.
-                        Issue nine reveals that years later he fathered her daughter Laurie as part of a consensual sexual relationship.</p>
-                </div>
-            </div>
-            <div class="hero manhattan d-flex justify-content-end">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+      </div>
+      <div class="collapse" id="multiCollapseExample1">
+        <div class="card card-body card-comedian">
+          <p>One of two government-sanctioned heroes (along with Doctor Manhattan) who remains active after the Keene Act is passed in 1977 to ban superheroes.</p>
+          <p>His murder, which occurs shortly before the first chapter begins, sets the plot of Watchmen in motion. </p>
+          <p>The character appears throughout the story in flashbacks and aspects of his personality are revealed by other characters.</p>
+          <p>The Comedian was based on the Charlton Comics character Peacemaker, with elements of the Marvel Comics spy character Nick Fury added. Moore and Gibbons saw The Comedian as "a kind of Gordon Liddy character, only a much bigger, tougher guy".
+            Richard Reynolds described The Comedian as "ruthless, cynical, and nihilistic, and yet capable of deeper insights than the others into the role of the costumed hero". He attempts to rape the first Silk Spectre in the 1940s. Issue nine reveals
+            that years later he fathered her daughter Laurie as part of a consensual sexual relationship.</p>
+        </div>
+      </div>
+      <div class="hero manhattan d-flex justify-content-end">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
                             Dr Manhattan<img class="logo img-fluid" src="image/manhattan.png" alt="">
                     </a>
-            </div>
-            <div class="collapse" id="multiCollapseExample2">
-                <div class="card card-body card-manhattan">
-                    <p>A superpowered being who is contracted by the United States government. Scientist Jon Osterman gained power over matter when he was caught in an "Intrinsic Field Subtractor" in 1959. Doctor Manhattan was based upon Charlton's Captain
-                        Atom, who in Moore's original proposal was surrounded by the shadow of nuclear threat. However, the writer found he could do more with Manhattan as a "kind of a quantum super-hero" than he could have with Captain Atom.[14] In contrast
-                        to other superheroes who lacked scientific exploration of their origins, Moore sought to delve into nuclear physics and quantum physics in constructing the character of Dr. Manhattan. The writer believed that a character living
-                        in a quantum universe would not perceive time with a linear perspective, which would influence the character's perception of human affairs. Moore also wanted to avoid creating an emotionless character like Spock from Star Trek,
-                        so he sought for Dr. Manhattan to retain "human habits" and to grow away from them and humanity in general.</p>
-                </div>
-            </div>
-            <div class="hero owl d-flex justify-content-start">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
+      </div>
+      <div class="collapse" id="multiCollapseExample2">
+        <div class="card card-body card-manhattan">
+          <p>A superpowered being who is contracted by the United States government. Scientist Jon Osterman gained power over matter when he was caught in an "Intrinsic Field Subtractor" in 1959. Doctor Manhattan was based upon Charlton's Captain Atom, who
+            in Moore's original proposal was surrounded by the shadow of nuclear threat. However, the writer found he could do more with Manhattan as a "kind of a quantum super-hero" than he could have with Captain Atom.[14] In contrast to other superheroes
+            who lacked scientific exploration of their origins, Moore sought to delve into nuclear physics and quantum physics in constructing the character of Dr. Manhattan. The writer believed that a character living in a quantum universe would not
+            perceive time with a linear perspective, which would influence the character's perception of human affairs. Moore also wanted to avoid creating an emotionless character like Spock from Star Trek, so he sought for Dr. Manhattan to retain "human
+            habits" and to grow away from them and humanity in general.</p>
+        </div>
+      </div>
+      <div class="hero owl d-flex justify-content-start">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
                     <img class="logo img-fluid" src="image/owl.png" alt="">Night Owl II
                 </a>
-            </div>
-            <div class="collapse" id="multiCollapseExample3">
-                <div class="card card-body card-owl">
-                    <p>A retired superhero who utilizes owl-themed gadgets. Nite Owl was based on the Ted Kord version of the Blue Beetle. Paralleling the way Ted Kord had a predecessor, Moore also incorporated an earlier adventurer who used the name "Nite
-                        Owl", the retired crime fighter Hollis Mason, into Watchmen. While Moore devised character notes for Gibbons to work from, the artist provided a name and a costume design for Hollis Mason he had created when he was twelve. Richard
-                        Reynolds noted in Super Heroes: A Modern Mythology that despite the character's Charlton roots, Nite Owl's modus operandi has more in common with the DC Comics character Batman. According to Klock, his civilian form "visually suggests
-                        an impotent, middle-aged Clark Kent."</p>
-                </div>
-            </div>
-            <div class="hero ozymandias d-flex justify-content-end">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">
+      </div>
+      <div class="collapse" id="multiCollapseExample3">
+        <div class="card card-body card-owl">
+          <p>A retired superhero who utilizes owl-themed gadgets. Nite Owl was based on the Ted Kord version of the Blue Beetle. Paralleling the way Ted Kord had a predecessor, Moore also incorporated an earlier adventurer who used the name "Nite Owl", the
+            retired crime fighter Hollis Mason, into Watchmen. While Moore devised character notes for Gibbons to work from, the artist provided a name and a costume design for Hollis Mason he had created when he was twelve. Richard Reynolds noted in
+            Super Heroes: A Modern Mythology that despite the character's Charlton roots, Nite Owl's modus operandi has more in common with the DC Comics character Batman. According to Klock, his civilian form "visually suggests an impotent, middle-aged
+            Clark Kent."</p>
+        </div>
+      </div>
+      <div class="hero ozymandias d-flex justify-content-end">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">
                             Ozymandias<img class="logo img-fluid" src="image/ozymandias.png" alt="">
                     </a>
-            </div>
-            <div class="collapse" id="multiCollapseExample4">
-                <div class="card card-body card-ozymandias">
-                    <p>Drawing inspiration from Alexander the Great, Veidt was once the superhero Ozymandias, but has since retired to devote his attention to the running of his own enterprises. Veidt is believed to be the smartest man on the planet. Ozymandias
-                        was based on Peter Cannon, Thunderbolt; Moore liked the idea of a character who "us[ed] the full 100% of his brain" and "[had] complete physical and mental control". Richard Reynolds noted that by taking initiative to "help the
-                        world", Veidt displays a trait normally attributed to villains in superhero stories, and in a sense he is the "villain" of the series. Gibbons noted, "One of the worst of his sins [is] kind of looking down on the rest of humanity,
-                        scorning the rest of humanity.</p>
-                </div>
-            </div>
-            <div class="hero rorschach d-flex justify-content-start">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">
+      </div>
+      <div class="collapse" id="multiCollapseExample4">
+        <div class="card card-body card-ozymandias">
+          <p>Drawing inspiration from Alexander the Great, Veidt was once the superhero Ozymandias, but has since retired to devote his attention to the running of his own enterprises. Veidt is believed to be the smartest man on the planet. Ozymandias was
+            based on Peter Cannon, Thunderbolt; Moore liked the idea of a character who "us[ed] the full 100% of his brain" and "[had] complete physical and mental control". Richard Reynolds noted that by taking initiative to "help the world", Veidt displays
+            a trait normally attributed to villains in superhero stories, and in a sense he is the "villain" of the series. Gibbons noted, "One of the worst of his sins [is] kind of looking down on the rest of humanity, scorning the rest of humanity.</p>
+        </div>
+      </div>
+      <div class="hero rorschach d-flex justify-content-start">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">
                     <img class="logo img-fluid" src="image/rorschach.png" alt="">Rorschach
                 </a>
-            </div>
-            <div class="collapse" id="multiCollapseExample5">
-                <div class="card card-body card-rorschach">
-                    <p>A vigilante who wears a white mask that contains a symmetrical but constantly shifting ink blot pattern, he continues to fight crime in spite of his outlaw status. Moore said he was trying to "come up with this quintessential Steve
-                        Ditko character—someone who's got a funny name, whose surname begins with a 'K,' who's got an oddly designed mask". Moore based Rorschach on Ditko's creation Mr. Ditko's Charlton character The Question also served as a template
-                        for creating Rorschach. Comics historian Bradford W. Wright described the character's world view "a set of black-and-white values that take many shapes but never mix into shades of gray, similar to the ink blot tests of his namesake".
-                        Rorschach sees existence as random and, according to Wright, this viewpoint leaves the character "free to 'scrawl [his] own design' on a 'morally blank world'". Moore said he did not foresee the death of Rorschach until the fourth
-                        issue when he realized that his refusal to compromise would result in him not surviving the story.</p>
-                </div>
-            </div>
-            <div class="hero specter d-flex justify-content-end">
-                <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">
+      </div>
+      <div class="collapse" id="multiCollapseExample5">
+        <div class="card card-body card-rorschach">
+          <p>A vigilante who wears a white mask that contains a symmetrical but constantly shifting ink blot pattern, he continues to fight crime in spite of his outlaw status. Moore said he was trying to "come up with this quintessential Steve Ditko character—someone
+            who's got a funny name, whose surname begins with a 'K,' who's got an oddly designed mask". Moore based Rorschach on Ditko's creation Mr. Ditko's Charlton character The Question also served as a template for creating Rorschach. Comics historian
+            Bradford W. Wright described the character's world view "a set of black-and-white values that take many shapes but never mix into shades of gray, similar to the ink blot tests of his namesake". Rorschach sees existence as random and, according
+            to Wright, this viewpoint leaves the character "free to 'scrawl [his] own design' on a 'morally blank world'". Moore said he did not foresee the death of Rorschach until the fourth issue when he realized that his refusal to compromise would
+            result in him not surviving the story.</p>
+        </div>
+      </div>
+      <div class="hero specter d-flex justify-content-end">
+        <a class="text-uppercase hero-title" data-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">
                             Silk Specter II<img class="logo img-fluid" src="image/specter.png" alt="">
                     </a>
+      </div>
+      <div class="collapse" id="multiCollapseExample6">
+        <div class="card card-body card-specter">
+          <p>The daughter of Sally Jupiter (the first Silk Spectre, with whom she has a strained relationship) and The Comedian. Of Polish heritage, she had been the lover of Doctor Manhattan for years. While Silk Spectre was based partially on the Charlton
+            character Nightshade, Moore was not impressed by the character and drew more from heroines such as Black Canary and Phantom Lady.</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="section-gallery">
+      <div class="thumbnails py-3 d-flex flex-wrap justify-content-center">
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg00" id="over"></div>
+          <img class="flash" src="image/gallery25.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg01" id="over"></div>
+          <img class="flash" src="image/gallery01.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg02" id="over"></div>
+          <img class="flash" src="image/gallery02.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg03" id="over"></div>
+          <img class="flash" src="image/gallery03.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg04" id="over"></div>
+          <img class="flash" src="image/gallery04.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg05" id="over"></div>
+          <img class="flash" src="image/gallery05.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg06" id="over"></div>
+          <img class="flash" src="image/gallery06.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg07" id="over"></div>
+          <img class="flash" src="image/gallery07.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg08" id="over"></div>
+          <img class="flash" src="image/gallery08.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg09" id="over"></div>
+          <img class="flash" src="image/gallery09.jpeg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg10" id="over"></div>
+          <img class="flash" src="image/gallery10.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg11" id="over"></div>
+          <img class="flash" src="image/gallery11.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg12" id="over"></div>
+          <img class="flash" src="image/gallery12.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg13" id="over"></div>
+          <img class="flash" src="image/gallery13.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg14" id="over"></div>
+          <img class="flash" src="image/gallery14.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg15" id="over"></div>
+          <img class="flash" src="image/gallery15.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg16" id="over"></div>
+          <img class="flash" src="image/gallery16.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg17" id="over"></div>
+          <img class="flash" src="image/gallery17.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg18" id="over"></div>
+          <img class="flash" src="image/gallery18.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg19" id="over"></div>
+          <img class="flash" src="image/gallery19.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg20" id="over"></div>
+          <img class="flash" src="image/gallery20.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg21" id="over"></div>
+          <img class="flash" src="image/gallery21.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg22" id="over"></div>
+          <img class="flash" src="image/gallery22.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg23" id="over"></div>
+          <img class="flash" src="image/gallery23.jpg" />
+        </div>
+        <div class="setup">
+          <div data-toggle="modal" data-target=".bd-example-modal-lg24" id="over"></div>
+          <img class="flash" src="image/gallery24.jpg" />
+        </div>
+      </div>
+      <div class="modal-pic">
+        <div class="modal fade bd-example-modal-lg00" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery25.jpg" alt="gallery-content">
             </div>
-            <div class="collapse" id="multiCollapseExample6">
-                <div class="card card-body card-specter">
-                    <p>The daughter of Sally Jupiter (the first Silk Spectre, with whom she has a strained relationship) and The Comedian. Of Polish heritage, she had been the lover of Doctor Manhattan for years. While Silk Spectre was based partially on
-                        the Charlton character Nightshade, Moore was not impressed by the character and drew more from heroines such as Black Canary and Phantom Lady.</p>
-                </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery01.jpg" alt="gallery-content">
             </div>
-        </section>
-        <section id="gallery" class="section-gallery">
-            <div class="thumbnails py-3 d-flex flex-wrap justify-content-center">
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg00" id="over"></div>
-                    <img class="flash" src="image/gallery25.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg01" id="over"></div>
-                    <img class="flash" src="image/gallery01.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg02" id="over"></div>
-                    <img class="flash" src="image/gallery02.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg03" id="over"></div>
-                    <img class="flash" src="image/gallery03.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg04" id="over"></div>
-                    <img class="flash" src="image/gallery04.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg05" id="over"></div>
-                    <img class="flash" src="image/gallery05.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg06" id="over"></div>
-                    <img class="flash" src="image/gallery06.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg07" id="over"></div>
-                    <img class="flash" src="image/gallery07.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg08" id="over"></div>
-                    <img class="flash" src="image/gallery08.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg09" id="over"></div>
-                    <img class="flash" src="image/gallery09.jpeg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg10" id="over"></div>
-                    <img class="flash" src="image/gallery10.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg11" id="over"></div>
-                    <img class="flash" src="image/gallery11.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg12" id="over"></div>
-                    <img class="flash" src="image/gallery12.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg13" id="over"></div>
-                    <img class="flash" src="image/gallery13.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg14" id="over"></div>
-                    <img class="flash" src="image/gallery14.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg15" id="over"></div>
-                    <img class="flash" src="image/gallery15.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg16" id="over"></div>
-                    <img class="flash" src="image/gallery16.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg17" id="over"></div>
-                    <img class="flash" src="image/gallery17.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg18" id="over"></div>
-                    <img class="flash" src="image/gallery18.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg19" id="over"></div>
-                    <img class="flash" src="image/gallery19.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg20" id="over"></div>
-                    <img class="flash" src="image/gallery20.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg21" id="over"></div>
-                    <img class="flash" src="image/gallery21.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg22" id="over"></div>
-                    <img class="flash" src="image/gallery22.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg23" id="over"></div>
-                    <img class="flash" src="image/gallery23.jpg" />
-                </div>
-                <div class="setup">
-                    <div data-toggle="modal" data-target=".bd-example-modal-lg24" id="over"></div>
-                    <img class="flash" src="image/gallery24.jpg" />
-                </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery02.jpg" alt="gallery-content">
             </div>
-            <div class="modal-pic">
-                <div class="modal fade bd-example-modal-lg00" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery25.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery01.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery02.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery03.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery04.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg05" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery05.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg06" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery06.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg07" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery07.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg08" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery08.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg09" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery09.jpeg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery10.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery11.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery12.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery13.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery14.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery15.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg16" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery16.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg17" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery17.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg18" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery18.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg19" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery19.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg20" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery20.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg21" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery21.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg22" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery22.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg23" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery23.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade bd-example-modal-lg24" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <img class="gallery-content" src="image/gallery24.jpg" alt="gallery-content">
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery03.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery04.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg05" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery05.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg06" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery06.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg07" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery07.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg08" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery08.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg09" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery09.jpeg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery10.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery11.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery12.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery13.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery14.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery15.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg16" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery16.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg17" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery17.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg18" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery18.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg19" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery19.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg20" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery20.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg21" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery21.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg22" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery22.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg23" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery23.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg24" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img class="gallery-content" src="image/gallery24.jpg" alt="gallery-content">
+            </div>
+          </div>
+        </div>
 
-            </div>
-        </section>
-        <section id="shop" class="section-shop">
-            <div class="row">
-                <div class="col-9 shop-content d-flex flex-wrap justify-content-center">
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                    <div class="shop-item col-3 d-flex flex-column">
-                        <img src="image/owl.png" alt="">
-                        <input type="number">
-                    </div>
-                </div>
-                <div class="col-3 shop-cart">
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="d-flex justify-content-center section-contact ">
-            <form action="" class="px-5">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name...">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-                <label for="subject">Subject</label>
-                <textarea name="subject" id="subject" placeholder="Write something..." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <h6 class="pt-3">This site was made by : Thomas Ward Bouchard, Mario liberio, Mucedda Flaviano</h6>
-        <a class="mt-3" href="#allezcine">Check our streaming website</a>
-    </footer>
+      </div>
+    </section>
+    <section id="shop" class="section-shop">
+      <div class="row">
+        <div class="col-9 shop-content d-flex flex-wrap justify-content-center">
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+          <div class="shop-item col-3 d-flex flex-column">
+            <img src="image/owl.png" alt="">
+            <input type="number">
+          </div>
+        </div>
+        <div class="col-3 shop-cart">
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="d-flex justify-content-center section-contact ">
+      <form action="" class="px-5">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <label for="subject">Subject</label>
+        <textarea name="subject" id="subject" placeholder="Write something..." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h6 class="pt-3">This site was made by : Thomas Ward Bouchard, Mario liberio, Mucedda Flaviano</h6>
+    <a class="mt-3" href="#allezcine">Check our streaming website</a>
+  </footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
