@@ -22,7 +22,7 @@ nav {
     height: 15vh;
     ;
     width: 100%;
-    background-color: black;
+    background-color: gold;
     ;
     padding: 0;
 }
@@ -34,7 +34,7 @@ nav {
 
 .navbar span {
     font-family: 'watchmen';
-    color: gold;
+    color: black;
     font-size: 14vh;
     padding: 0vh;
 }
@@ -45,16 +45,10 @@ nav {
     color: gold;
 }
 
-.navbar-toggler {
-    border: 2px teal solid;
-}
-
 .navbar a:hover {
     color: white;
-    text-shadow: 0px 0px 10px aquamarine;
+    text-shadow: 0px 0px 10px white;
 }
-
-main {}
 
 .section-news {
     padding-top: 14.5vh;
@@ -245,10 +239,45 @@ main {}
     border: none;
 }
 
-.section-goodies {
-    background-color: black;
+.section-shop {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+}
+
+.shop-content {
+    background-color: black;
+}
+
+.shop-item {
+    margin: 2px;
+    max-width: 15vw;
+    max-height: auto;
+    padding-bottom: 3vh;
+}
+
+
+/*
+.shop-item img {
+    width: 190px;
+    height: 190px;
+    margin: 2px;
+}
+
+.shop-item input {
+    width: 190px;
+    height: auto;
+    margin: 2px;
+}
+*/
+
+.shop-cart {
+    background-image: url("../image/cart-img.png");
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    border-top: 1vh solid black;
+    border-bottom: 1vh solid black;
 }
 
 .section-contact {
@@ -310,17 +339,17 @@ footer {
     width: 100vw;
 }
 
-a {
+footer a {
     text-decoration: none;
     color: gold;
 }
 
-a:hover {
+footer a:hover {
     text-decoration: none;
     color: gold;
 }
 
-a:active {
+footer a:active {
     text-decoration: none;
     color: gold;
 }
