@@ -44,31 +44,37 @@ $("#searchBar").click(function(){ // search bar to remain transparent
   $("#searchBar").css("background-color","transparent");
 })
 
+$("#navBrandButton").click(function () {
+  $('html, body').animate({
+    scrollTop: $(".jumbonavbar").offset().top - 82
+  }, 1000);
+})
+
 $("#homeButton").click(function () {
   $('html, body').animate({
     scrollTop: $(".jumbonavbar").offset().top-82
-  }, 2000);
+  }, 1000);
 })
 
 $("#featuredMoviesButton").click(function(){
   $('html, body').animate({
     scrollTop: $("#featuredMoviesSection").offset().top-82
-  }, 2000);
+  }, 1000);
 })
 $("#featuredSeriesButton").click(function () {
   $('html, body').animate({
     scrollTop: $("#featuredSeriesSection").offset().top-82
-  }, 2000);
+  }, 1000);
 })
 $("#shopMoviesButton").click(function () {
   $('html, body').animate({
     scrollTop: $(".shopMoviesSection").offset().top-82
-  }, 2000);
+  }, 1000);
 })
 $("#contactUsButton").click(function () {
   $('html, body').animate({
     scrollTop: $("#contactUsSection").offset().top-82
-  }, 2000);
+  }, 1000);
 })
 
 
