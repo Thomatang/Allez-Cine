@@ -567,3 +567,7 @@ footer a:active {
 #subject {
   border-width: 3px;
 }
+
+.headerRow {
+    display: none;
+}
