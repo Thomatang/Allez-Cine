@@ -25,6 +25,7 @@ nav {
     background-color: gold;
     ;
     padding: 0;
+    box-shadow: 5px 0px 20px 18px black;
 }
 
 .navbar img {
@@ -260,7 +261,7 @@ nav {
     padding-top: 3vh;
 }
 
-.itemName{
+.itemName {
     font-size: 12px;
     font-weight: bold;
     font-family: 'inconsolata';
@@ -270,17 +271,22 @@ nav {
 }
 
 .itemPrice {
-    visibility: hidden;
+    display: none;
+}
+
+.shop-item i {
+    color: gold;
+    font-size: 2em;
+}
+
+.shop-item img {
+    width: 172px;
+    height: auto;
+    margin: 2px;
 }
 
 
 /*
-.shop-item img {
-    width: 190px;
-    height: 190px;
-    margin: 2px;
-}
-
 .shop-item input {
     width: 190px;
     height: auto;
@@ -551,7 +557,7 @@ footer a:active {
     animation-duration: 1s;
 }
 
-.carouCaption{
-  background-color: rgba(47, 52, 62, 0.3);
-  margin-bottom: -12em;
+.carouCaption {
+    background-color: rgba(47, 52, 62, 0.3);
+    margin-bottom: -12em;
 }
