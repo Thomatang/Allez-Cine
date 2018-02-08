@@ -3,7 +3,7 @@
     src: url('../font/watchmen.ttf');
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     background: transparent;
     width: 0px;
 }
@@ -25,7 +25,7 @@ nav {
     background-color: gold;
     ;
     padding: 0;
-    box-shadow: 5px 0px 20px 18px black;
+    box-shadow: 2px 0px 40px 18px black;
 }
 
 .navbar img {
@@ -285,15 +285,6 @@ nav {
     margin: 2px;
 }
 
-
-/*
-.shop-item input {
-    width: 190px;
-    height: auto;
-    margin: 2px;
-}
-*/
-
 .shop-cart {
     background-image: url("../image/cart-img.png");
     background-color: gold;
@@ -302,6 +293,28 @@ nav {
     background-size: contain;
     border-top: 1vh solid black;
     border-bottom: 1vh solid black;
+    padding-top: 10px;
+}
+
+.simpleCart_total {
+    color: limegreen;
+}
+
+.simpleCart_checkout {
+    font-family: 'watchmen';
+    letter-spacing: 0.4em;
+    color: gold;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.simpleCart_items {
+    background: white;
+    border-top: 3px solid black;
+    border-left: 2px solid black;
+    padding-left: 8px;
 }
 
 .section-contact {
@@ -557,29 +570,28 @@ footer a:active {
     animation-duration: 1s;
 }
 
-<<<<<<< HEAD
 .carouCaption {
     background-color: rgba(47, 52, 62, 0.3);
     margin-bottom: -12em;
-=======
-.carouCaption{
-  background-color: rgba(47, 52, 62, 0.3);
-  margin-bottom: -12em;
+}
+
+.carouCaption {
+    background-color: rgba(47, 52, 62, 0.3);
+    margin-bottom: -12em;
 }
 
 #fname {
-  border-width: 3px;
+    border-width: 3px;
 }
 
 #lname {
-  border-width: 3px;
+    border-width: 3px;
 }
 
 #subject {
-  border-width: 3px;
+    border-width: 3px;
 }
 
 .headerRow {
     display: none;
->>>>>>> 7a5167d43bec155cc21dd08c6b2a85ec298c4257
 }
