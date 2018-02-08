@@ -1,6 +1,8 @@
 # Allez-Cine
 Frontend project, done by a team of 3 developers.
+
 Check out our ALLEZ-CINE one pager website [here](https://thomatang.github.io/Allez-Cine/mainPage/index.html)
+
 Check out our WATCHMEN fan website [here](https://thomatang.github.io/Allez-Cine/fanWebsite/index.html)
 
 # The team :rocket:
