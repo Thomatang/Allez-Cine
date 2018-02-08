@@ -557,7 +557,29 @@ footer a:active {
     animation-duration: 1s;
 }
 
+<<<<<<< HEAD
 .carouCaption {
     background-color: rgba(47, 52, 62, 0.3);
     margin-bottom: -12em;
+=======
+.carouCaption{
+  background-color: rgba(47, 52, 62, 0.3);
+  margin-bottom: -12em;
+}
+
+#fname {
+  border-width: 3px;
+}
+
+#lname {
+  border-width: 3px;
+}
+
+#subject {
+  border-width: 3px;
+}
+
+.headerRow {
+    display: none;
+>>>>>>> 7a5167d43bec155cc21dd08c6b2a85ec298c4257
 }
