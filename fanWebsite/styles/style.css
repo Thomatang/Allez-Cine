@@ -1,0 +1,597 @@
+@font-face {
+    font-family: 'watchmen';
+    src: url('../font/watchmen.ttf');
+}
+
+ ::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "inconsolata";
+}
+
+nav {
+    z-index: 500;
+}
+
+.navbar {
+    height: 15vh;
+    ;
+    width: 100%;
+    background-color: gold;
+    ;
+    padding: 0;
+    box-shadow: 2px 0px 40px 18px black;
+}
+
+.navbar img {
+    height: 3em;
+    width: auto;
+}
+
+.navbar span {
+    font-family: 'watchmen';
+    color: black;
+    font-size: 14vh;
+    padding: 0vh;
+}
+
+.navbar a {
+    font-family: 'Inconsolata';
+    letter-spacing: 0.1em;
+    color: gold;
+}
+
+.navbar a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+.section-news {
+    padding-top: 14.5vh;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.carousel-inner h3 {
+    font-family: "Inconsolata";
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.carousel-inner p {
+    font-family: "Inconsolata";
+    padding-bottom: 12em;
+}
+
+.section-hero {
+    width: 100vw;
+    height: auto;
+}
+
+.hero {
+    height: 14.16vh;
+    width: 100vw;
+    background-color: black;
+    border-top: 1vh solid gold;
+    overflow: hidden;
+}
+
+.hero .hero-title {
+    text-decoration: none;
+    font-family: 'watchmen';
+    font-size: 11vh;
+    color: gold;
+    padding-top: 4vh;
+}
+
+.hero .logo {
+    height: 13.8vh;
+    width: auto;
+    padding-bottom: 5vh;
+}
+
+.card-comedian {
+    background-image: url("../image/comedian-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 5vw;
+    padding-right: 55vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'inconsolata';
+    border-left: 1vh solid gold;
+}
+
+.card-manhattan {
+    background-image: url("../image/manhattan-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 55vw;
+    padding-right: 5vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'inconsolata';
+    border-right: 1vh solid gold;
+}
+
+.card-owl {
+    background-image: url("../image/owl-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 5vw;
+    padding-right: 55vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'inconsolata';
+    border-left: 1vh solid gold;
+}
+
+.card-ozymandias {
+    background-image: url("../image/ozymandias-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 55vw;
+    padding-right: 5vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'inconsolata';
+    border-right: 1vh solid gold;
+}
+
+.card-rorschach {
+    background-image: url("../image/rorschach-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 5vw;
+    padding-right: 55vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'inconsolata';
+    border-left: 1vh solid gold;
+}
+
+.card-specter {
+    background-image: url("../image/specter-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: gold;
+    padding-left: 55vw;
+    padding-right: 5vw;
+    border: 0px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'inconsolata';
+    border-right: 1vh solid gold;
+}
+
+.section-gallery {
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
+}
+
+#over {
+    position: absolute;
+    width: 9vw;
+    height: 18vh;
+    background-image: url("../image/black.png");
+    opacity: 0.7;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.flash {
+    position: relative;
+    width: 800px;
+    height: auto;
+    right: 200px;
+    bottom: 200px
+}
+
+.setup {
+    width: 9vw;
+    height: 18vh;
+    overflow: hidden;
+    margin: 1px;
+}
+
+#over:hover {
+    opacity: 0;
+    position: absolute;
+    animation: flash 0.5s ease-out;
+    width: 9vw;
+    height: 18vh;
+}
+
+.gallery-content {
+    height: 75vh;
+    width: auto;
+    pointer-events: all;
+    position: absolute;
+    align-self: center;
+}
+
+.thumbnails {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    position: absolute;
+}
+
+.modal-content {
+    border: none;
+}
+
+.section-shop {
+    width: 100vw;
+    height: auto;
+}
+
+.shop-content {
+    background-color: black;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    max-width: 15vw;
+    max-height: auto;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.itemName {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'inconsolata';
+    text-align: center;
+    color: #fad700;
+    letter-spacing: 2px;
+}
+
+.itemPrice {
+    display: none;
+}
+
+.shop-item i {
+    color: gold;
+    font-size: 2em;
+}
+
+.shop-item img {
+    width: 172px;
+    height: auto;
+    margin: 2px;
+}
+
+.shop-cart {
+    background-image: url("../image/cart-img.png");
+    background-color: gold;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    border-top: 1vh solid black;
+    border-bottom: 1vh solid black;
+    padding-top: 10px;
+}
+
+.simpleCart_total {
+    color: limegreen;
+}
+
+.simpleCart_checkout {
+    font-family: 'watchmen';
+    letter-spacing: 0.4em;
+    color: gold;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.simpleCart_items {
+    background: white;
+    border-top: 3px solid black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.section-contact {
+    background-color: gold;
+    background-image: url("../image/contact.png");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: gold;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: translateY(3px);
+}
+
+#contact {
+    background-color: gold;
+    padding: 20px;
+}
+
+form {
+    width: 50vw;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: black;
+    font-family: 'inconsolata';
+    color: gold;
+    text-align: center;
+    vertical-align: middle;
+    height: 18vh;
+    width: 100vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: gold;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+footer a:active {
+    text-decoration: none;
+    color: gold;
+}
+
+@keyframes flash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        background-image: none;
+    }
+}
+
+
+/* ANIMATION */
+
+@-webkit-keyframes flip {
+    0%,
+    100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg)
+    }
+}
+
+@keyframes flip {
+    0%,
+    100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg)
+    }
+}
+
+@-webkit-keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.carouCaption {
+    background-color: rgba(47, 52, 62, 0.3);
+    margin-bottom: -12em;
+}
+
+.carouCaption {
+    background-color: rgba(47, 52, 62, 0.3);
+    margin-bottom: -12em;
+}
+
+#fname {
+    border-width: 3px;
+}
+
+#lname {
+    border-width: 3px;
+}
+
+#subject {
+    border-width: 3px;
+}
+
+.headerRow {
+    display: none;
+}

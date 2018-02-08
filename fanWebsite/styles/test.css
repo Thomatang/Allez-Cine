@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'watchmen';
+    src: url('../font/watchmen.ttf');
+}
+
+.section-shop {
+    width: 100vw;
+    height: 100vh;
+}
+
+.shop-content {
+    background-color: black;
+}
+
+.shop-item {
+    margin: 2px;
+    max-width: 15vw;
+    max-height: auto;
+}
+
+
+/*
+.shop-item img {
+    width: 190px;
+    height: 190px;
+    margin: 2px;
+}
+
+.shop-item input {
+    width: 190px;
+    height: auto;
+    margin: 2px;
+}
+*/
+
+.shop-cart {
+    background-color: gold;
+}
