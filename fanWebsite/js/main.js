@@ -30,3 +30,11 @@ $(document).ready(function() {
     })
 
 });
+
+// ========== FORM VALIDATION section ================================
+
+$('#submitbtn').click(function(){
+  if ($('#fname').val() == '') { $('#fname').css('border-color', 'red'); } else { $('#fname').css('border-color', 'green'); }
+  if ($('#lname').val() == '') { $('#lname').css('border-color', 'red'); } else { $('#lname').css('border-color', 'green'); }
+  if ($('#subject').val() == '') { $('#subject').css('border-color', 'red'); } else { $('#subject').css('border-color', 'green'); }
+})
